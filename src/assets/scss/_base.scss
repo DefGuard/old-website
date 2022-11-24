@@ -1,0 +1,30 @@
+html {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../mixins" as *;
+
+button {
+  &.github {
+    border: 0 solid transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 24px;
+    column-gap: 20px;
+    border-radius: 15px;
+    background-color: var(--dfg-blue);
+    min-height: 62px;
+
+    & > span {
+      @include button-text;
+
+      display: block;
+      line-height: 30px;
+    }
+  }
+}

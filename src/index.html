@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DefGuard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="/assets/images/favicon/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/images/favicon/favicon-96x96.png"
+    />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="#main">
+            <img src="/assets/images/svg/logo_nav.svg" alt="logo" />
+          </a>
+        </li>
+        <li class="link">
+          <a href="">Features</a>
+        </li>
+        <li class="link">
+          <a href="">Documentation</a>
+        </li>
+        <li class="link">
+          <a href="">Try Enterprise</a>
+        </li>
+        <li>
+          <a href="">
+            <button class="github">
+              <span>Get it from GitHub</span>
+              <img
+                src="/assets/images/svg/github_white.svg"
+                alt="github icon"
+              />
+            </button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="source">
+        <div class="content">
+          <div class="header">
+            <h1>
+              Build <span class="blue">Your Own</span> secure 
+              <span class="break"> & decentralized Organization </span>
+            </h1>
+            <ul id="floating-socials">
+              <li>
+                <a href="">
+                  <img
+                    src="/assets/images/svg/github_black.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/assets/images/svg/twitter_black.svg"
+                    alt="twitter icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/assets/images/svg/slack_black.svg"
+                    alt="slack icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/assets/images/svg/reddit_black.svg"
+                    alt="reddit icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p>
+            <strong>defguard</strong> provides a set of modules for building
+            organizations that value data privacy, and self-custody - securing
+            the whole user journey with identity, vpn, multi-factor
+            authentication, and hardware key management
+          </p>
+          <a class="built" href="https://teonite.com">
+            <img
+              src="/assets/images/gif/built.gif"
+              alt="built by"
+              id="built-by"
+            />
+          </a>
+          <button class="github">
+            <span>Get it from github</span>
+            <img src="/assets/images/svg/github_white.svg" alt="github icon" />
+          </button>
+          <video></video>
+          <img
+            class="bg"
+            src="/assets/images/webp/source-bg-1.webp"
+            alt="bg1"
+          />
+          <img
+            class="bg"
+            src="/assets/images/webp/source-bg-2.webp"
+            alt="bg2"
+          />
+        </div>
+      </section>
+      <section id="identity" class="feature light">
+        <header>
+          <img src="/assets/images/svg/branching.svg" alt="section icon" />
+          <h2>Identity</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              Every organization starts with users and this is the core defguard
+              functionalitya core functionality of defguard based on a
+              PostgreSQL database (community). Then we provide the following
+              integrations:
+            </p>
+            <ul>
+              <li>
+                <strong>OpenLDAP</strong> synchronization (enterprise) -
+                currently supporting users and groups synchronization
+              </li>
+              <li>
+                <strong>OAuth2</strong> (enterprise) -
+                <strong>PLACEHOLDER</strong>
+              </li>
+              <li>
+                <strong>OpenID</strong> Connect (enterprise) - to enable [login
+                with your company] in your company systems
+              </li>
+            </ul>
+            <p>
+              Active Directory synchronization (enterprise) and in-development
+            </p>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+      </section>
+      <section id="mfa" class="feature white">
+        <header>
+          <img src="/assets/images/svg/shield.svg" alt="shield" />
+          <h2>Multi-Factor Authentication</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>MFA is currently supported with the following methods:</p>
+            <ul>
+              <li>
+                Time-based <strong>One-time Password</strong> Algorithm (TOTP -
+                eg. Google Authenticator)
+              </li>
+              <li>
+                <strong>WebAuthn/FIDO2</strong> - for hardware key
+                authentication support
+              </li>
+              <li>
+                Web3 - authentication with crypto software and hardware wallets
+                using Metamask and Wallet Connect
+              </li>
+            </ul>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+        <img src="/assets/images/webp/source-bg-2.webp" alt="" class="bg" />
+      </section>
+      <section id="vpn" class="feature light">
+        <header>
+          <img src="/assets/images/svg/shield.svg" alt="shield" />
+          <h2>VPN</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              Based on Wireguard protocol with the ability to manage/connect
+              multiple sites/gateways
+            </p>
+            <ul>
+              <li>
+                Easy access for new users (in development) - share VPN
+                configuration for users in a secure way, enabling them to
+                download and configure VPN configurations with one email
+              </li>
+              <li>
+                User managed - enabling users to easily manage their devices at
+                any time (screen z profile)
+              </li>
+              <li>
+                Activity & Statistics - Detailed analytics, graphs and
+                connection activity for administrators
+              </li>
+              <li>Global Map overview - currently in development</li>
+              <li>
+                Easy setup - defguard Wireguard gateway supports Linux and
+                OPNsense with system packages
+              </li>
+            </ul>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+      </section>
+      <section id="provisioning" class="feature white">
+        <header>
+          <img src="/assets/images/svg/shield.svg" alt="shield" />
+          <h2>Yubikey Provisioning</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              An easy way to provision <strong>YubiKey</strong> hardware keys in
+              an organization, generating signing keys - gpg/pgp and
+              authentication keys - eg. ssh.
+            </p>
+          </div>
+          <img
+            src="/assets/images/svg/provisioning.svg"
+            alt="provisioning"
+            class="right"
+          />
+        </div>
+        <img src="/assets/images/webp/source-bg-2.webp" alt="" class="bg" />
+      </section>
+      <section id="integrations" class="feature light">
+        <header>
+          <img src="/assets/images/svg/shield.svg" alt="shield" />
+          <h2>Integrations</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              Automate processes that involve your organization's data using:
+            </p>
+            <ul>
+              <li>
+                <strong>API</strong> - all functionalities are exposed by REST
+                API
+              </li>
+              <li>
+                <strong>Webhooks</strong> - outgoing webhooks are a simple way
+                that defguard can notify your systems of ongoing changes in:
+                identity (user was added, delated, modified) or hardware key
+                provisioning (easly propage pgp/gpg or ssh keys to your internal
+                systems)
+              </li>
+            </ul>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+      </section>
+      <section id="web3" class="feature white">
+        <header>
+          <img src="/assets/images/svg/wallet.svg" alt="wallet" />
+          <h2>Web 3</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              Integration with Web3/blockchain functionalities. Since defguard
+              secures the whole user journey/connection, from secure
+              communication using VPN, then authentication based on company
+              identity and Multi-Factor Authentication (supporting crypto
+              wallets), it’s a perfect web2 -> web3 gateway for your
+              organization (* przypis: for now only with Ethereum compatible
+              based networks)
+            </p>
+            <ul>
+              <li>
+                Wallet management - with Metamask and Wallet Connect - an easy
+                way for users to validate the ownership of wallets - no need to
+                send wallet addresses through slack/email anymore
+              </li>
+              <li>
+                Organizational self-custody wallets (in development) - create a
+                self-custody, multi-sig company wallet
+              </li>
+              <li>
+                Blockchain transactions for organizations (in development) -
+                since company members can securely connect/expose their wallets
+                and the organization has a self-custody multi-signature wallet,
+                the next step is to enable transactions on blockchain
+              </li>
+              <li>
+                Blockchain node management (in development) - connect, monitor
+                and manage your own blockchain nodes
+              </li>
+              <li>
+                Easy deployment - we support easy deployment using:
+                <ul>
+                  <li>Docker Compose</li>
+                  <li>Kubernetes - using Helm Chart</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+        <img src="/assets/images/webp/source-bg-2.webp" alt="" class="bg" />
+      </section>
+      <section id="open-source" class="feature light">
+        <header>
+          <img src="/assets/images/svg/shield.svg" alt="shield" />
+          <h2>Open Source</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <p>
+              Automate processes that involve your organization's data using:
+            </p>
+            <ul>
+              <li>Github - all project repositories</li>
+              <li>
+                Issue tracking / feature request - link do issue mgnt w repo
+                defguard
+              </li>
+              <li>
+                Chat - chat with our developers and community - wacham się co do
+                slack/discord?
+              </li>
+            </ul>
+          </div>
+          <img src="" alt="" class="right" />
+        </div>
+      </section>
+      <section id="enterprise" class="feature white">
+        <header>
+          <img src="/assets/images/svg/wallet.svg" alt="wallet" />
+          <h2>Enterprise</h2>
+        </header>
+        <div class="content">
+          <div class="left">
+            <strong>Defguard</strong> is in the alpha development stage - at
+            this point, we grant anyone a full enterprise license for a limited
+            time, but those organizations/users that will be most helpful in
+            testing, bug fixing or just creative feedback will be granted in the
+            future a full and unlimited in time enterprise license. To obtain an
+            enterprise license, please fill out the following
+            <a href="/">form.</a>
+          </div>
+          <div class="placeholder right">
+            <p><strong>PLACEHOLDER</strong></p>
+          </div>
+        </div>
+        <img src="/assets/images/webp/source-bg-2.webp" alt="" class="bg" />
+      </section>
+    </main>
+    <footer>
+      <img src="/assets/images/svg/logo_white.svg" alt="logo" />
+      <div class="links">
+        <div class="col">
+          <p>Company</p>
+          <ul>
+            <li><a href="/">About Us</a></li>
+            <li><a href="">Business Model</a></li>
+            <li><a href="">Ownership</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>Community</p>
+          <ul>
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Slack</a></li>
+            <li><a href="">Reddit</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2022 teonite services sp. z .o .o</p>
+      <img class="bg" src="/assets/images/webp/source-bg-1.webp" alt="bg1" />
+      <img class="bg" src="/assets/images/webp/source-bg-2.webp" alt="bg2" />
+    </footer>
+  </body>
+</html>

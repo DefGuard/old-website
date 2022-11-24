@@ -1,0 +1,13 @@
+version: "3"
+
+tasks:
+  watch-sass:
+    cmds:
+      - pnpm sass --watch src/assets/scss/index.scss:src/assets/styles/style.css
+
+  serve:
+    cmds:
+      - pnpm browser-sync start --no-notify --server "src" --files src/assets/styles/**/*.css --files src/**/*.html --files src/scripts/**/*.js --no-open
+
+  default:
+    deps: [watch-sass, serve]

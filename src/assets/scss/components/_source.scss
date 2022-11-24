@@ -1,0 +1,137 @@
+@use "../mixins" as *;
+
+#source {
+  width: 100%;
+  padding-top: 84px;
+  padding-bottom: 64px;
+  overflow: hidden;
+
+  & > .content {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    /**
+    background-image: url("/assets/images/webp/source-bg-1.webp"),
+      url("/assets/images/webp/source-bg-2.webp");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, bottom center;
+     **/
+    padding: 0 0 98px;
+
+    & > .bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 1920px;
+      height: 1080px;
+    }
+
+    & > .built {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      height: 64px;
+      width: 300px;
+      cursor: pointer;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: var(--white);
+
+      img {
+        height: 32px;
+        width: 218px;
+      }
+    }
+
+    & > p {
+      max-width: 845px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+
+      & > strong {
+        font-weight: 700;
+      }
+    }
+
+    & > video {
+      width: 1096px;
+      height: 607px;
+      background-color: var(--white);
+      filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
+      border-radius: 25px;
+    }
+
+    & > .github {
+      margin-bottom: 111px;
+      height: 115px;
+      column-gap: 20px;
+      padding: 0 48px;
+
+      span {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    & > .header {
+      position: relative;
+
+      & > h1 {
+        @include page-title;
+
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        & > .blue {
+          color: var(--dfg-blue);
+          font-weight: 700;
+        }
+
+        & > .break {
+          display: block;
+        }
+      }
+
+      #floating-socials {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        row-gap: 10px;
+        width: 24px;
+        margin: 0;
+
+        & > li {
+          height: 24px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "defguard landing",
+  "version": "0.1.0",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "postcss": "^8.4.19",
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard-scss": "^6.1.0"
+  }
+}
