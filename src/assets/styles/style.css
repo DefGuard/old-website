@@ -69,6 +69,7 @@ body > nav > ul > li > a {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 18px;
+  line-height: 27px;
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
@@ -125,12 +126,6 @@ button.github > span {
   justify-content: center;
   width: 100%;
   position: relative;
-  /**
-  background-image: url("/assets/images/webp/source-bg-1.webp"),
-    url("/assets/images/webp/source-bg-2.webp");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, bottom center;
-   **/
   padding: 0 0 98px;
 }
 #source > .content > .bg {
@@ -152,7 +147,6 @@ button.github > span {
   cursor: pointer;
   margin-bottom: 50px;
   border-radius: 10px;
-  background-color: var(--white);
 }
 #source > .content > .built img {
   height: 32px;
@@ -230,6 +224,90 @@ button.github > span {
 #source > .content > .header #floating-socials > li img {
   width: 100%;
   height: 100%;
+}
+
+section.feature {
+  box-sizing: border-box;
+  padding: 64px 0 74px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+}
+section.feature.light {
+  background-color: var(--dfg-light-grey);
+}
+section.feature.white {
+  position: relative;
+  overflow: hidden;
+}
+section.feature.white > .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+section.feature > header {
+  width: 100%;
+  max-width: 1096px;
+  display: flex;
+  flex-flow: row;
+  column-gap: 30px;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+section.feature > header > img {
+  width: 72px;
+  height: 72px;
+}
+section.feature > header > h2 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 72px;
+  color: var(--black);
+  text-align: left;
+}
+section.feature > .content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1096px;
+  column-gap: 25px;
+}
+section.feature > .content > .left, section.feature > .content > .right {
+  width: 535px;
+}
+section.feature > .content > .left p, section.feature > .content > .left span, section.feature > .content > .left a, section.feature > .content > .left li {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--black);
+}
+section.feature > .content > .left strong {
+  font-weight: 700;
+}
+section.feature > .content > .left ul, section.feature > .content > .left li {
+  margin: 0 0 0 8px;
+  padding: 0;
+}
+section.feature > .content > .right.placeholder {
+  background-color: var(--white);
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
 }
 
 html {

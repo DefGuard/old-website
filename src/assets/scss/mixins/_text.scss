@@ -8,10 +8,10 @@
 
 @mixin section-title {
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 72px;
-  text-transform: uppercase;
   color: var(--black);
+  text-align: left;
 }
 
 @mixin button-text {
@@ -41,6 +41,7 @@
   font-family: "Poppins";
   font-weight: 300;
   font-size: 18px;
+  line-height: 27px;
   color: var(--black);
 }
 
