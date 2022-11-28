@@ -1,17 +1,17 @@
 :root {
-  --box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-  --box-shadow-dfg-app: 5px 5px 15px rgba(0, 0, 0, 0.15);
-  --box-shadow-blue: 0 12px 24px rgba(12, 140, 224, 0.15);
+    --box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    --box-shadow-dfg-app: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    --box-shadow-blue: 0 12px 24px rgba(12, 140, 224, 0.15);
 }
 
 @mixin standard-shadow {
-  box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 @mixin shadow-dfg-app {
-  box-shadow: var(--box-shadow-dfg-app);
+    box-shadow: var(--box-shadow-dfg-app);
 }
 
 @mixin shadow-blue {
-  box-shadow: var(--box-shadow-blue);
+    box-shadow: var(--box-shadow-blue);
 }

@@ -1,50 +1,50 @@
 @mixin page-title {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 64.48px;
-  text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 64.48px;
+    text-transform: uppercase;
 }
 
 @mixin section-title {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 72px;
-  color: var(--black);
-  text-align: left;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 72px;
+    color: var(--black);
+    text-align: left;
 }
 
 @mixin button-text {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--white);
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white);
 }
 
 @mixin menu-text {
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: var(--black);
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--black);
 }
 
 @mixin standard-header {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: capitalize;
-  color: var(--black);
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--black);
 }
 
 @mixin standard-text {
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--black);
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
 }
 
 @mixin bold {
-  font-weight: 700;
+    font-weight: 700;
 }

@@ -3,11 +3,15 @@ version: "3"
 tasks:
   watch-sass:
     cmds:
-      - pnpm sass --watch src/assets/scss/index.scss:src/assets/styles/style.css
+      - pnpm sass --watch src/assets/scss/index.scss:src/assets/scss/style.css
+  
+  watch-css:
+    cmds:
+      - pnpm watch -p "src/assets/scss/style.css" -c "pnpm postcss src/assets/scss/style.css -d src/assets/styles/"
 
   serve:
     cmds:
       - pnpm browser-sync start --no-notify --server "src" --files src/assets/styles/**/*.css --files src/**/*.html --files src/scripts/**/*.js --no-open
 
   default:
-    deps: [watch-sass, serve]
+    deps: [watch-sass, watch-css, serve]

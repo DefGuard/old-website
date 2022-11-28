@@ -1,66 +1,66 @@
 @use "../mixins" as *;
 
 body {
-  & > nav {
-    height: 128px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background-color: var(--white);
-    z-index: 10;
+    & > nav {
+        height: 128px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: var(--white);
+        z-index: 10;
 
-    @include standard-shadow;
+        @include standard-shadow;
 
-    & > ul {
-      list-style: none;
-      display: flex;
-      flex-flow: row nowrap;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      column-gap: 32px;
-      padding: 0;
-      margin: 0;
-      height: 100%;
+        & > ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            column-gap: 32px;
+            padding: 0;
+            margin: 0;
+            height: 100%;
 
-      &.logo {
-        margin-right: 64px;
+            &.logo {
+                margin-right: 64px;
 
-        img {
-          height: 64px;
-          width: 160px;
-        }
-      }
-
-      & > li {
-        display: block;
-
-        & > a {
-          @include standard-text;
-
-          text-decoration: none;
-          cursor: pointer;
-
-          & > .github {
-            & > img {
-              width: 24px;
-              height: 24px;
+                img {
+                    height: 64px;
+                    width: 160px;
+                }
             }
-          }
-        }
 
-        &.link {
-          height: 37px;
-          box-sizing: border-box;
-          padding: 0 20px;
-          display: flex;
-          flex-flow: row nowrap;
-          align-items: center;
-          align-content: center;
-          justify-content: center;
+            & > li {
+                display: block;
+
+                & > a {
+                    @include standard-text;
+
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    & > .github {
+                        & > img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+
+                &.link {
+                    height: 37px;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                }
+            }
         }
-      }
     }
-  }
 }
