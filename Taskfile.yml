@@ -11,7 +11,7 @@ tasks:
 
   serve:
     cmds:
-      - pnpm browser-sync start --no-notify --server "src" --files src/assets/styles/**/*.css --files src/**/*.html --files src/scripts/**/*.js --no-open
+      - pnpm browser-sync start --no-ghost-mode  --no-notify --server "src" --files src/assets/styles/**/*.css --files src/**/*.html --files src/scripts/**/*.js --no-open
 
   default:
     deps: [watch-sass, watch-css, serve]
