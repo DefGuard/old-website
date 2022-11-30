@@ -13,5 +13,12 @@ tasks:
     cmds:
       - pnpm browser-sync start --no-ghost-mode  --no-notify --server "src" --files src/assets/styles/**/*.css --files src/**/*.html --files src/scripts/**/*.js --no-open
 
+  build:
+    cmds:
+      - pnpm fix
+      - pnpm lint
+      - pnpm sass src/assets/scss/index.scss:src/assets/scss/style.css
+      - pnpm postcss src/assets/scss/style.css -d src/assets/styles/
+
   default:
     deps: [watch-sass, watch-css, serve]

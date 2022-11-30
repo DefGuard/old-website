@@ -1,148 +1,171 @@
 @use "../mixins" as *;
 
 body {
-    & > footer {
-        position: relative;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 45px 30px 160px;
+  & > footer {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 45px 30px 160px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 60px 0 100px 350px;
+      min-height: 700px;
+    }
+
+    & > .logo {
+      margin-bottom: 47px;
+      display: none;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+    }
+
+    & > .bg {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+
+      &.desktop {
+        display: none;
 
         @include media-breakpoint-up(lg) {
-            padding: 60px 0 100px 350px;
-            min-height: 700px;
+          display: block;
         }
+      }
 
-        & > .logo {
-            margin-bottom: 47px;
-            display: none;
+      &.mobile {
+        display: block;
 
-            @include media-breakpoint-up(lg) {
-                display: block;
-            }
+        @include media-breakpoint-up(lg) {
+          display: none;
         }
+      }
 
-        & > .bg {
-            position: absolute;
-            z-index: -1;
-            inset: 0;
+      &.blue {
+        width: 100%;
+        height: 100%;
+        content: " ";
+        background-color: var(--dfg-blue);
+      }
 
-            &.desktop {
-                display: none;
+      &.dots,
+      &.wave {
+        width: 1920px;
+        height: 1080px;
 
-                @include media-breakpoint-up(lg) {
-                    display: block;
-                }
-            }
-
-            &.mobile {
-                display: block;
-
-                @include media-breakpoint-up(lg) {
-                    display: none;
-                }
-            }
-
-            &.blue {
-                width: 100%;
-                height: 100%;
-                content: " ";
-                background-color: var(--dfg-blue);
-            }
-
-            &.dots,
-            &.wave {
-                width: 1920px;
-                height: 1080px;
-
-                &.mobile {
-                    width: 100%;
-                    height: 518px;
-                }
-            }
-
-            &.dots {
-                left: 751px;
-                top: 0;
-            }
-
-            &.wave {
-                left: -84px;
-                top: -252px;
-
-                &.mobile {
-                    top: 0;
-                    left: 0;
-                }
-            }
+        &.mobile {
+          width: 100%;
+          height: 518px;
         }
+      }
 
-        & > .copyright {
-            @include standard-text;
+      &.dots {
+        left: 751px;
+        top: 0;
+      }
 
-            color: var(--white);
-            font-weight: 700;
-            position: absolute;
-            bottom: 60px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+      &.wave {
+        left: -84px;
+        top: -252px;
+
+        &.mobile {
+          top: 0;
+          left: 0;
         }
-
-        & > .links {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            row-gap: 32px;
-
-            @include media-breakpoint-up(lg) {
-                row-gap: 20px;
-                margin-bottom: 60px;
-                align-items: flex-start;
-                align-content: flex-start;
-                justify-content: flex-start;
-            }
-
-            & > .col {
-                min-width: 315px;
-
-                & > p {
-                    @include standard-text;
-
-                    font-weight: 700;
-                    color: var(--white);
-                    margin: 0;
-                    height: 35px;
-                }
-
-                & > ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    flex-flow: column;
-                    row-gap: 5px;
-
-                    & > li {
-                        & > a {
-                            @include standard-text;
-
-                            display: flex;
-                            flex-flow: row nowrap;
-                            align-items: center;
-                            align-content: center;
-                            justify-content: flex-start;
-                            height: 27px;
-                            text-decoration: none;
-                            color: var(--white);
-                            text-align: left;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+
+    & > .copyright {
+      @include standard-text;
+
+      color: var(--white);
+      font-weight: 700;
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    & > .links {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      row-gap: 32px;
+
+      @include media-breakpoint-up(lg) {
+        row-gap: 20px;
+        margin-bottom: 60px;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+      }
+
+      & > .col {
+        min-width: 315px;
+
+        & > p {
+          @include standard-text;
+
+          font-weight: 700;
+          color: var(--white);
+          margin: 0;
+          text-align: center;
+
+          @include media-breakpoint-down(lg) {
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 20px;
+          }
+
+          @include media-breakpoint-up(lg) {
+            height: 35px;
+            text-align: left;
+          }
+        }
+
+        & > ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-flow: column;
+          row-gap: 5px;
+
+          & > li {
+            width: 100%;
+
+            & > a {
+              @include standard-text;
+
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              align-content: center;
+              height: 27px;
+              text-decoration: none;
+              color: var(--white);
+              text-align: center;
+              justify-content: center;
+              width: 100%;
+
+              @include media-breakpoint-down(lg) {
+                font-size: 18px;
+              }
+
+              @include media-breakpoint-up(lg) {
+                text-align: left;
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

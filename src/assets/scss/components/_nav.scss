@@ -1,98 +1,98 @@
 @use "../mixins" as *;
 
 body {
-    & > nav {
-        height: 128px;
+  & > nav {
+    height: 128px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: var(--white);
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 0 28px;
+
+    @include standard-shadow;
+
+    & > ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      align-content: center;
+      align-items: center;
+      justify-content: flex-start;
+
+      @include media-breakpoint-down(lg) {
         width: 100%;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-        background-color: var(--white);
-        z-index: 10;
-        box-sizing: border-box;
-        padding: 0 28px;
+      }
 
-        @include standard-shadow;
+      @include media-breakpoint-up(lg) {
+        justify-content: center;
+        column-gap: 32px;
+      }
 
-        & > ul {
-            list-style: none;
-            display: flex;
-            flex-flow: row nowrap;
+      &.logo {
+        margin-right: 64px;
+
+        img {
+          height: 64px;
+          width: 160px;
+        }
+      }
+
+      & > li {
+        display: block;
+
+        & > a {
+          @include standard-text;
+
+          text-decoration: none;
+          cursor: pointer;
+
+          & > .github {
+            & > img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        &.link {
+          height: 37px;
+          box-sizing: border-box;
+          padding: 0 20px;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+        }
+
+        &.link,
+        &.github-link {
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
+        }
+
+        &#hamburger {
+          margin-left: auto;
+          @include media-breakpoint-up(lg) {
+            display: none;
+          }
+          button {
+            height: 48px;
+            width: 48px;
+            border: 0 solid transparent;
             padding: 0;
             margin: 0;
-            height: 100%;
-            align-content: center;
-            align-items: center;
-            justify-content: flex-start;
-
-            @include media-breakpoint-down(lg) {
-                width: 100%;
-            }
-
-            @include media-breakpoint-up(lg) {
-                justify-content: center;
-                column-gap: 32px;
-            }
-
-            &.logo {
-                margin-right: 64px;
-
-                img {
-                    height: 64px;
-                    width: 160px;
-                }
-            }
-
-            & > li {
-                display: block;
-
-                & > a {
-                    @include standard-text;
-
-                    text-decoration: none;
-                    cursor: pointer;
-
-                    & > .github {
-                        & > img {
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
-                }
-
-                &.link {
-                    height: 37px;
-                    box-sizing: border-box;
-                    padding: 0 20px;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    align-items: center;
-                    align-content: center;
-                    justify-content: center;
-                }
-
-                &.link,
-                &.github-link {
-                    @include media-breakpoint-down(lg) {
-                        display: none;
-                    }
-                }
-
-                &#hamburger {
-                    margin-left: auto;
-                    @include media-breakpoint-up(lg) {
-                        display: none;
-                    }
-                    button {
-                        height: 48px;
-                        width: 48px;
-                        border: 0 solid transparent;
-                        padding: 0;
-                        margin: 0;
-                        background-color: transparent;
-                    }
-                }
-            }
+            background-color: transparent;
+          }
         }
+      }
     }
+  }
 }

@@ -1,213 +1,213 @@
 @use "../mixins" as *;
 
 #source {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 
-    @include media-breakpoint-down(lg) {
-        box-sizing: border-box;
-        padding: 60px 28px 80px;
+  @include media-breakpoint-down(lg) {
+    box-sizing: border-box;
+    padding: 60px 28px 80px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 84px;
+    padding-bottom: 100px;
+  }
+
+  & > .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    &.desktop {
+      display: none;
+    }
+
+    &.wave {
+      width: 100%;
+    }
+
+    &.dots {
+      width: 100%;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      &.wave {
+        height: 650px;
+      }
+
+      &.dots {
+        height: 404px;
+        width: 429px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     @include media-breakpoint-up(lg) {
-        padding-top: 84px;
-        padding-bottom: 100px;
+      &.mobile {
+        display: none;
+      }
+
+      &.desktop {
+        display: block;
+      }
+
+      &.dots,
+      &.wave {
+        width: 1920px;
+        height: 1080px;
+      }
+    }
+  }
+
+  & > .content {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    & > .built {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer;
+      border-radius: 10px;
+      height: 32px;
+      width: 148px;
+      margin-bottom: 24px;
+      margin-top: 20px;
+
+      @include media-breakpoint-up(lg) {
+        height: 64px;
+        width: 300px;
+        margin-bottom: 50px;
+      }
+
+      img {
+        height: 32px;
+        width: 218px;
+      }
     }
 
-    & > .bg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
+    & > p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 21px;
+      width: 100%;
 
-        &.desktop {
-            display: none;
-        }
+      @include media-breakpoint-up(lg) {
+        max-width: 845px;
+        font-size: 20px;
+        line-height: 30px;
+      }
 
-        &.wave {
-            width: 100%;
-        }
+      & > strong {
+        font-weight: 700;
+      }
+    }
 
-        &.dots {
-            width: 100%;
-        }
+    & > video {
+      background-color: var(--white);
+      filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
+      border-radius: 25px;
+      width: 100%;
+      aspect-ratio: 16/9;
 
-        @include media-breakpoint-between(md, lg) {
-            &.wave {
-                height: 650px;
-            }
+      @include media-breakpoint-up(lg) {
+        width: 1096px;
+        height: 607px;
+      }
+    }
 
-            &.dots {
-                height: 404px;
-                width: 429px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
+    & > .github {
+      column-gap: 20px;
+      height: 62px;
+      padding: 0 24px;
+      margin-bottom: 50px;
+
+      @include media-breakpoint-up(lg) {
+        height: 115px;
+        padding: 0 48px;
+        margin-bottom: 111px;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
 
         @include media-breakpoint-up(lg) {
-            &.mobile {
-                display: none;
-            }
-
-            &.desktop {
-                display: block;
-            }
-
-            &.dots,
-            &.wave {
-                width: 1920px;
-                height: 1080px;
-            }
+          font-size: 34px;
+          line-height: 51px;
         }
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+
+        @include media-breakpoint-up(lg) {
+          width: 48px;
+          height: 48px;
+        }
+      }
     }
 
-    & > .content {
+    & > .header {
+      position: relative;
+
+      & > h1 {
+        @include page-title;
+
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        & > .blue {
+          color: var(--dfg-blue);
+          font-weight: 700;
+        }
+
+        & > .break {
+          display: block;
+        }
+      }
+
+      #floating-socials {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        list-style: none;
         display: flex;
         flex-flow: column;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        row-gap: 10px;
+        width: 24px;
+        margin: 0;
 
-        & > .built {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-            cursor: pointer;
-            border-radius: 10px;
-            height: 32px;
-            width: 148px;
-            margin-bottom: 24px;
-            margin-top: 20px;
-
-            @include media-breakpoint-up(lg) {
-                height: 64px;
-                width: 300px;
-                margin-bottom: 50px;
-            }
-
-            img {
-                height: 32px;
-                width: 218px;
-            }
+        @include media-breakpoint-down(lg) {
+          display: none;
         }
 
-        & > p {
-            text-align: center;
-            font-size: 14px;
-            line-height: 21px;
+        & > li {
+          height: 24px;
+
+          img {
             width: 100%;
-
-            @include media-breakpoint-up(lg) {
-                max-width: 845px;
-                font-size: 20px;
-                line-height: 30px;
-            }
-
-            & > strong {
-                font-weight: 700;
-            }
+            height: 100%;
+          }
         }
-
-        & > video {
-            background-color: var(--white);
-            filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
-            border-radius: 25px;
-            width: 100%;
-            aspect-ratio: 16/9;
-
-            @include media-breakpoint-up(lg) {
-                width: 1096px;
-                height: 607px;
-            }
-        }
-
-        & > .github {
-            column-gap: 20px;
-            height: 62px;
-            padding: 0 24px;
-            margin-bottom: 50px;
-
-            @include media-breakpoint-up(lg) {
-                height: 115px;
-                padding: 0 48px;
-                margin-bottom: 111px;
-            }
-
-            span {
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 30px;
-
-                @include media-breakpoint-up(lg) {
-                    font-size: 34px;
-                    line-height: 51px;
-                }
-            }
-
-            img {
-                width: 24px;
-                height: 24px;
-
-                @include media-breakpoint-up(lg) {
-                    width: 48px;
-                    height: 48px;
-                }
-            }
-        }
-
-        & > .header {
-            position: relative;
-
-            & > h1 {
-                @include page-title;
-
-                text-align: center;
-                padding: 0;
-                margin-top: 0;
-                margin-bottom: 20px;
-
-                & > .blue {
-                    color: var(--dfg-blue);
-                    font-weight: 700;
-                }
-
-                & > .break {
-                    display: block;
-                }
-            }
-
-            #floating-socials {
-                position: absolute;
-                top: 0;
-                right: -200px;
-                list-style: none;
-                display: flex;
-                flex-flow: column;
-                align-items: flex-start;
-                align-content: flex-start;
-                justify-content: flex-start;
-                row-gap: 10px;
-                width: 24px;
-                margin: 0;
-
-                @include media-breakpoint-down(lg) {
-                    display: none;
-                }
-
-                & > li {
-                    height: 24px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

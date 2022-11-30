@@ -1,6 +1,2 @@
 semi: true
 tabWidth: 2
-overrides:
-  - files: "*.scss"
-    options:
-      tabWidth: 4
