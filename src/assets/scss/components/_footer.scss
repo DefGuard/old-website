@@ -24,55 +24,33 @@ body {
     & > .bg {
       position: absolute;
       z-index: -1;
-      inset: 0;
-
-      &.desktop {
-        display: none;
-
-        @include media-breakpoint-up(lg) {
-          display: block;
-        }
-      }
-
-      &.mobile {
-        display: block;
-
-        @include media-breakpoint-up(lg) {
-          display: none;
-        }
-      }
 
       &.blue {
+        inset: 0;
         width: 100%;
         height: 100%;
         content: " ";
         background-color: var(--dfg-blue);
       }
 
-      &.dots,
-      &.wave {
-        width: 1920px;
-        height: 1080px;
-
-        &.mobile {
-          width: 100%;
-          height: 518px;
-        }
-      }
-
-      &.dots {
-        left: 751px;
+      &.circuits {
         top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 1449px;
+        height: 100%;
+        min-height: 815px;
+        opacity: 0.2;
       }
 
-      &.wave {
-        left: -84px;
-        top: -252px;
-
-        &.mobile {
-          top: 0;
-          left: 0;
-        }
+      &.lines {
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-width: 1800px;
+        height: 100%;
+        min-height: 1013px;
+        opacity: 0.5;
       }
     }
 
