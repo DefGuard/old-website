@@ -34,17 +34,18 @@ body {
         column-gap: 32px;
       }
 
-      &.logo {
-        margin-right: 64px;
-
-        img {
-          height: 64px;
-          width: 160px;
-        }
-      }
-
       & > li {
         display: block;
+
+        &.logo {
+          width: 160px;
+          height: 64px;
+          & > a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+          }
+        }
 
         & > a {
           @include standard-text;
@@ -80,9 +81,11 @@ body {
 
         &#hamburger {
           margin-left: auto;
+
           @include media-breakpoint-up(lg) {
             display: none;
           }
+
           button {
             height: 48px;
             width: 48px;
@@ -90,6 +93,116 @@ body {
             padding: 0;
             margin: 0;
             background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mobile-nav {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  z-index: 20;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+
+  &.hidden {
+    display: none;
+  }
+
+  & > .top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 28px;
+    height: 128px;
+
+    & > img {
+      width: 160px;
+      height: 64px;
+    }
+
+    & > #mobile-nav-close {
+      padding: 0;
+      margin: 0;
+      margin-left: auto;
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 0 solid transparent;
+    }
+  }
+
+  & > .bottom {
+    & > .links {
+      list-style: none;
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      row-gap: 32px;
+      padding: 0;
+      margin: 160px 0 66px;
+
+      & > li {
+        &.link {
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          height: 37px;
+          & > a {
+            @include standard-text;
+            font-size: 18px;
+            text-decoration: none;
+          }
+        }
+
+        &.github-link {
+          & > a {
+            height: 62px;
+            width: 276px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    & > .socials {
+      list-style: none;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      column-gap: 27px;
+      margin: 0;
+      padding: 0;
+
+      & > li {
+        width: 48px;
+        height: 48px;
+
+        & > a {
+          width: 48px;
+          height: 48px;
+
+          img {
+            width: 48px;
+            height: 48px;
           }
         }
       }
