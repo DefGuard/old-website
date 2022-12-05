@@ -95,6 +95,27 @@ section {
       }
 
       & > .left {
+        a {
+          &.external {
+            box-sizing: border-box;
+            padding-right: 30px;
+            text-align: left;
+            height: 20px;
+            position: relative;
+
+            &::after {
+              content: " ";
+              height: 20px;
+              width: 20px;
+              position: absolute;
+              display: block;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              background-image: url("/assets/images/svg/external_link_blue.svg");
+            }
+          }
+        }
         p,
         span,
         a,

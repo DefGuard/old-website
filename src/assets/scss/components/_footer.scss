@@ -66,12 +66,17 @@ body {
       text-align: center;
       margin: 0;
       padding: 0;
+
+      & > a {
+        color: var(--white);
+        text-decoration: none;
+      }
     }
 
     & > .links {
       display: flex;
       flex-flow: row wrap;
-      align-items: center;
+      align-items: flex-start;
       align-content: center;
       justify-content: center;
       row-gap: 32px;
@@ -107,6 +112,12 @@ body {
           }
         }
 
+        & > .company {
+          a {
+            min-width: 140px;
+          }
+        }
+
         & > ul {
           list-style: none;
           padding: 0;
@@ -114,13 +125,22 @@ body {
           display: flex;
           flex-flow: column;
           row-gap: 5px;
+          align-items: center;
+
+          @include media-breakpoint-up(lg) {
+            align-items: flex-start;
+          }
 
           & > li {
-            width: 100%;
+            width: fit-content;
 
             & > a {
               @include standard-text;
 
+              min-width: 104px;
+              box-sizing: border-box;
+              padding-right: 16px;
+              position: relative;
               display: flex;
               flex-flow: row nowrap;
               align-items: center;
@@ -131,6 +151,12 @@ body {
               text-align: center;
               justify-content: center;
               width: 100%;
+              flex-grow: 0;
+              flex-shrink: 1;
+
+              &:hover {
+                text-decoration: underline;
+              }
 
               @include media-breakpoint-down(lg) {
                 font-size: 18px;
@@ -139,6 +165,18 @@ body {
               @include media-breakpoint-up(lg) {
                 text-align: left;
                 justify-content: flex-start;
+              }
+
+              &::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+                height: 12px;
+                background-image: url("/assets/images/svg/external_link.svg");
               }
             }
           }
