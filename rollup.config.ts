@@ -1,5 +1,6 @@
 import terser from "@rollup/plugin-terser";
 import json from "@rollup/plugin-json";
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import typescript from "@rollup/plugin-typescript";
 
 export default {
@@ -10,5 +11,5 @@ export default {
     name: "version",
     plugins: [terser()],
   },
-  plugins: [json(), typescript()],
+  plugins: [json(), nodeResolve(), typescript()],
 };
