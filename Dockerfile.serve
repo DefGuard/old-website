@@ -1,0 +1,10 @@
+FROM node:19.4-alpine as deps
+RUN npm install -g @go-task/cli pnpm
+WORKDIR /app
+COPY pnpm-lock.yaml package.json .
+RUN pnpm install
+
+FROM deps
+WORKDIR /app
+COPY . .
+CMD task serve
