@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: DefGuard/defguard.github.io 
+  branch: master
+  api_root: https://api.github.com 
+  site_domain: defguard.github.io
+  base_url: https://decap-dfg.teonite.net
+  auth_endpoint: auth
+  cms_label_prefix: decap/
+
+publish_mode: editorial_workflow
+local_backend: true
+media_folder: "src/assets/images/uploads"
+public_folder: "assets/images/uploads" 
+collections:
+  - name: "test"
+    label: "Test"
+    folder: "src/assets/collections/test"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - {label: "body", name: "body", widget: "markdown"}
