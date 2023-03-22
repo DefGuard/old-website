@@ -10,14 +10,14 @@ backend:
 
 publish_mode: editorial_workflow
 local_backend: true
-media_folder: "/static/images/"
-public_folder: "/images/" 
+media_folder: "/static/images/decap"
+public_folder: "/images/decap" 
 collections:
   - name: "landing"
     label: "Landing"
     files:
       - name: "LandingData" 
-        label: "Landing page data"
+        label: "Landing page config"
         file: "data/landing.yml"
         fields:
           - label: Header text
