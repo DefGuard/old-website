@@ -2,6 +2,14 @@ headerText: "# Build **Your Own** secure & decentralized Organization
   **defguard** provides a set of modules for building organizations that value
   data privacy, and self-custody - securing the whole user journey with
   identity, vpn, multi-factor authentication, and hardware key management"
+header:
+  - title: O﻿pen Source Army Knife Security Platform (Identity, VPN, Hardware keys,
+      Web3)
+    content: >-
+      Building a **secure organization** has always been **costly and hard**
+      (eg. integrating multiple systems).   
+
+      Our aim, is to build a beautiful and easy-to-use platform (for administrators and users) providing fundamental security for organizations.
 features:
   - icon: shield
     name: Enterprise
