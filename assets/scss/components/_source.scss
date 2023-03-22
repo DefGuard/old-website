@@ -154,7 +154,8 @@
         margin-top: 0;
         margin-bottom: 20px;
 
-        & > .blue {
+        & > .blue,
+        & > strong {
           color: var(--dfg-blue);
           font-weight: 700;
         }

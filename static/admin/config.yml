@@ -20,18 +20,12 @@ collections:
         label: "Landing page config"
         file: "data/landing.yml"
         fields:
-<<<<<<< Updated upstream
-          - label: Header text
-            name: headerText
-            widget: markdown
-=======
           - label: Header
             name: header
             widget: object
             fields:
               - {label: Title, name: title, widget: markdown}
               - {label: Sub content, name: content, widget: markdown}
->>>>>>> Stashed changes
           - label: Features
             name: features
             widget: list
