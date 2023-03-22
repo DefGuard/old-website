@@ -1,0 +1,17 @@
+<section id="enterprise" {{ if not .odd }} class="feature white" {{else}} class="feature light" {{end}}>
+  <header>
+    <img src="/images/svg/{{.context.icon}}.svg" alt="wallet" />
+    <h2>{{ .context.name }}</h2>
+  </header>
+  <div class="content">
+    <div class="left">
+      <p>
+        {{ .context.description | markdownify }}
+      </p>
+    </div>
+    <img src="{{ .image }}" class="right" />
+  </div>
+  {{if not .odd}}
+  <img class="bg" src="/images/svg/bg_circuits_l.svg" alt="circuits" />
+  {{end}}
+</section>

@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: DefGuard/defguard.github.io 
+  branch: master
+  api_root: https://api.github.com 
+  site_domain: defguard.github.io
+  base_url: https://decap-dfg.teonite.net
+  auth_endpoint: auth
+  cms_label_prefix: decap/
+
+publish_mode: editorial_workflow
+local_backend: true
+media_folder: "/static/images/"
+public_folder: "/images/" 
+collections:
+  - name: "landing"
+    label: "Landing"
+    files:
+      - name: "LandingData" 
+        label: "Landing page data"
+        file: "data/landing.yml"
+        fields:
+          - label: Header text
+            name: headerText
+            widget: markdown
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
+              - {label: Name, name: name, widget: text}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Image, name: image, widget: image}
+          - label: Socials
+            name: socials
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: image}
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}

@@ -1,0 +1,9 @@
+<ul id="floating-socials">
+  {{ range .socials }}
+  <li>
+    <a href="{{ .link }}" target="_blank" rel="noreferrer">
+      <img src="{{ .icon }}" />
+    </a>
+  </li>
+  {{end}}
+</ul>
