@@ -22,7 +22,7 @@ collections:
         fields:
           - label: Header
             name: header
-            widget: list
+            widget: object
             fields:
               - {label: Title, name: title, widget: markdown}
               - {label: Sub content, name: content, widget: markdown}
