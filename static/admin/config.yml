@@ -20,9 +20,12 @@ collections:
         label: "Landing page config"
         file: "data/landing.yml"
         fields:
-          - label: Header text
-            name: headerText
-            widget: markdown
+          - label: Header
+            name: header
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: markdown}
+              - {label: Sub content, name: content, widget: markdown}
           - label: Features
             name: features
             widget: list
