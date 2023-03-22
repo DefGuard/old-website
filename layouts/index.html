@@ -3,15 +3,11 @@
   <div class="content">
     <div class="header">
       <h1>
-        Build <span class="blue">Your Own</span> secure
-        <span class="break"> & decentralized Organization </span>
+        {{ .Site.Data.landing.header.title | markdownify }}
       </h1>
     </div>
     <p>
-      <strong>defguard</strong> provides a set of modules for building
-      organizations that value data privacy, and self-custody - securing
-      the whole user journey with identity, vpn, multi-factor
-      authentication, and hardware key management
+      {{ .Site.Data.landing.header.content | markdownify }}
     </p>
     <a class="built" href="https://teonite.com" target="_blank">
       <img src="/images/webp/built.webp" alt="built by" id="built-by" />
