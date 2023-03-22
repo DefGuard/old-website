@@ -13,10 +13,28 @@ local_backend: true
 media_folder: "src/assets/images/uploads"
 public_folder: "assets/images/uploads" 
 collections:
-  - name: "test"
-    label: "Test"
-    folder: "src/assets/collections/test"
-    create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
-    fields:
-      - {label: "body", name: "body", widget: "markdown"}
+  - name: "landing"
+    label: "Landing"
+    files:
+      - name: "LandingData" 
+        label: "Landing page data"
+        file: "data/landing.yml"
+        fields:
+          - label: Header text
+            name: headerText
+            widget: markdown
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
+              - {label: Name, name: name, widget: text}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Image, name: image, widget: image}
+          - label: Socials
+            name: socials
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: image}
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
