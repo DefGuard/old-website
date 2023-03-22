@@ -1,0 +1,41 @@
+headerText: >-
+  # Build **Your Own** secure  & decentralized Organization
+
+
+  **defguard** provides a set of modules for building organizations that value data privacy, and self-custody - securing the whole user journey with identity, vpn, multi-factor authentication, and hardware key management
+features:
+  - icon: shield
+    name: Enterprise
+    description: |-
+      **Defguard** is in the alpha development stage - at
+
+      this point, we grant anyone a full enterprise license for a
+
+              limited time, but those organizations/users that will be most
+
+              helpful in testing, bug fixing or just creative feedback will be
+
+              granted in the future a full and unlimited in time enterprise
+
+              license. To obtain an enterprise license, please fill out the
+
+              following [form.](https://e3lq8l9h2ct.typeform.com/to/KRVZcqMY)
+    image: assets/images/uploads/ef3-placeholder-image.jpg
+  - icon: branching
+    description: >-2
+       Automate processes that involve your organization's data using:
+
+      * Github - all project repositories
+
+      *  Issue tracking / feature request - link do issue mgnt w repo defguard
+
+      * Chat - chat with our developers and community - wacham się co do slack/discord?
+    name: Open Source
+    image: assets/images/uploads/ef3-placeholder-image.jpg
+socials:
+  - icon: assets/images/uploads/ef3-placeholder-image.jpg
+    name: Github
+    link: https://github.com/defguard/defguard/
+  - link: https://twitter.com/defguard_net
+    name: Twitter
+    icon: assets/images/uploads/ef3-placeholder-image.jpg
