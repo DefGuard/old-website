@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DefGuard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/ico" href="/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
+  {{ $sass := resources.Get "scss/index.scss"}}
+  {{ $options := (dict "transpiler" "dartsass" "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap"
+  (not
+  hugo.IsProduction))}}
+  {{ $style := $sass | resources.ToCSS $options | resources.PostCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
+</head>
+
+<body>
+  {{ partial "nav.html" . }}
+  <main>
+    {{ block "main" . }}
+
+    {{end}}
+  </main>
+  {{ block "addons" .}}
+
+  {{end}}
+  {{ partial "footer.html" . }}
+  {{ block "scripts" . }}
+
+  {{ end }}
+</body>
+
+</html>
