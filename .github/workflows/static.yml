@@ -52,13 +52,15 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+          path: './public'
+      - run: ls -R
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'public'
+          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
