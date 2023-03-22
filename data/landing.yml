@@ -1,3 +1,11 @@
+header:
+  title: "**O﻿pen Source** Army Knife **Security Platform** (Identity, VPN,
+    Hardware keys, Web3)"
+  content: >-
+    Building a **secure organization** has always been **costly and hard** (eg.
+    integrating multiple systems).\
+
+    Our aim, is to build a beautiful and easy-to-use platform (for administrators and users) providing fundamental security for organizations.
 features:
   - icon: shield
     name: Enterprise
