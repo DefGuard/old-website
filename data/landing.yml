@@ -49,3 +49,9 @@ features:
 
       * Easy setup - defguard Wireguard gateway supports Linux and OPNsense with system packages
     image: /images/decap/profile.png
+  - icon: shield
+    name: Yubikey Provisioning
+    description: An easy way to provision **YubiKey** hardware keys in an
+      organization, generation signing keys - gpg/pgp and authentication keys -
+      eg. shh
+    image: /images/decap/yubi.png
