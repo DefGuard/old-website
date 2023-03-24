@@ -9,7 +9,7 @@
         {{ .context.description | markdownify }}
       </p>
     </div>
-    <img src="{{ .image }}" class="right" />
+    <img src="{{ .context.image }}" class="right" />
   </div>
   {{if not .odd}}
   <img class="bg" src="/images/svg/bg_circuits_l.svg" alt="circuits" />
