@@ -1,6 +1,6 @@
 const setSocialPosition = () => {
   const socialsElement = document.getElementById("floating-socials");
-  const headerElement = document.querySelector("h1");
+  const headerElement = document.querySelector("#source>.content>.header");
   if (!socialsElement || !headerElement) {
     return;
   }
