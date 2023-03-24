@@ -7,9 +7,10 @@
   </div>
   <div class="bottom">
     <ul class="links">
-      {{ range .Site.Data.navigation.links}}
+      {{ range $item := .Site.Data.navigation.links }}
       <li class="link">
-        <a href="{{.link}}" target="_{{.target}}" {{if .target eq "blank" }} rel="noreferrer" {{end}}>{{ .text }}</a>
+        <a href="{{ $item.link }}" target="_{{ $item.target }}" {{ if (eq $item.target "blank" )}} rel="noreferrer"
+          {{end}}>{{ $item.text }}</a>
       </li>
       {{end}}
       <li class="github-link">
@@ -37,9 +38,10 @@
         <img src="/images/svg/logo_nav.svg" alt="logo" />
       </a>
     </li>
-    {{ range .Site.Data.navigation.links}}
+    {{ range $item := .Site.Data.navigation.links }}
     <li class="link">
-      <a href="{{.link}}" target="_{{.target}}" {{if .target eq "blank" }} rel="noreferrer" {{end}}>{{.text}}</a>
+      <a href="{{ $item.link }}" target="_{{ $item.target }}" {{ if (eq $item.target "blank" )}} rel="noreferrer"
+        {{end}}>{{ $item.text }}</a>
     </li>
     {{end}}
     <li class="github-link">
