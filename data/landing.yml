@@ -1,5 +1,34 @@
 header:
-  title: 
-  content:  
+  title: Build **Your Own** secure <br> & decentralized Organization
+  content: "**defguard** provides a set of modules for building organizations that
+    value data privacy, and self-custody - securing the whole user journey with
+    identity, vpn, multi-factor authentication, and hardware key management"
 features:
+  - icon: branching
+    name: Identity
+    description: >-
+      Every organization starts with users and this is the core defguard
+      functionality based on a PostgreSQL database (community). Then we provide
+      the following integrations:
 
+
+      * **OpenLDAP** synchronization (enterprise) - currently supporting users and groups sychronization
+
+      * **OAuth2** (enterprise) - PLACEHOLDER
+
+      * **OpenID** Connect (enterprise) - to enable \[login with your company] in your company systems
+
+      * Active Directory synchronization (enterprise) and in-development
+    image: /images/decap/users.png
+  - icon: shield
+    name: Multi-Factor Authentication
+    description: >-
+      MFA is currently supported with the following methods:
+
+
+      * Time-based **One-time Password** Algorithm (TOTP - eg. Google Authenticator)
+
+      * **WebAuthn / FIDO2** - for hardware key authentication support
+
+      * Web3 - authentication with crypto software and hardware wallets using Metamask and Wallet Connect
+    image: /images/decap/yubi.png
