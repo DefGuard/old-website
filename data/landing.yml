@@ -1,5 +1,102 @@
 header:
-  title: 
-  content:  
-features:
+  title: |-
+    Build **Your Own** secure  
 
+    & decentralized Organization
+  content: "**defguard** provides a set of modules for building organizations that
+    value data privacy, and self-custody - securing the whole user journey with
+    identity, vpn, multi-factor authentication, and hardware key management"
+features:
+  - icon: branching
+    name: Identity
+    description: >-
+      Every organization starts with users and this is the core defguard
+      functionality based on a PostgreSQL database (community). Then we provide
+      the following integrations:
+
+
+      * **OpenLDAP** synchronization (enterprise) - currently supporting users and groups sychronization
+
+      * **OAuth2** (enterprise) - PLACEHOLDER
+
+      * **OpenID** Connect (enterprise) - to enable \[login with your company] in your company systems
+
+      * Active Directory synchronization (enterprise) and in-development
+    image: /images/decap/users.png
+  - icon: shield
+    name: Multi-Factor Authentication
+    description: >-
+      MFA is currently supported with the following methods:
+
+
+      * Time-based **One-time Password** Algorithm (TOTP - eg. Google Authenticator)
+
+      * **WebAuthn / FIDO2** - for hardware key authentication support
+
+      * Web3 - authentication with crypto software and hardware wallets using Metamask and Wallet Connect
+    image: /images/decap/yubi.png
+  - icon: shield
+    name: VPN
+    description: >-
+      Based on Wireguard protocol with the ability to manage/connect multiple
+      sites/gateways
+
+
+      * Easy access for new users (in development) - share VPN configuration for users in a secure way, enabling them to download and configure VPN configurations with one email
+
+      * User managed - enabled users to manage their devices at any time easily
+
+      * Activity & Statistics - Detailed analytics, graphs, and connection activity for administrators
+
+      * Global Map overview - currently in development
+
+      * Easy setup - defguard Wireguard gateway supports Linux and OPNsense with system packages
+    image: /images/decap/profile.png
+  - icon: shield
+    name: Yubikey Provisioning
+    description: An easy way to provision **YubiKey** hardware keys in an
+      organization, generation signing keys - gpg/pgp and authentication keys -
+      eg. shh
+    image: /images/decap/yubi.png
+  - icon: shield
+    name: Integrations
+    description: >-
+      Automate processes that involve your organization's data using:
+
+
+      * **API** - all functionalities are exposed by REST API
+
+      * **Webhooks** - outgoing webhooks are a simple way that defguard can notify your systems of ongoing changes in: identity ( user was added, deleted, modified) or hardware key provisioning ( easily propagate pgp/gpg or ssh keys to your internal systems)
+    image: /images/decap/webhooks.png
+  - icon: wallet
+    name: Web 3
+    description: >-
+      Integration with Web3/blockchain functionalities. Since defguard secures
+      the whole user journey/connections, from secure communication using VPN,
+      then authentication based on company identity and Multi-Factor
+      Authentication ( supporting crypto wallets), it's a perfect web2 -> web3
+      gateway for your organization.
+
+
+      * Wallet management - with MetaMask and Wallet Connect - an easy way for users to validate the ownership of wallets - no need to sed wallet addresses through slack/email anymore
+
+      * Organizational self-custody wallets ( in development) - create a self-custody, multi-sig company wallet
+
+      * Blockchain transactions for organizations ( in development) - since company members can securely connect/expose their wallets and the organization has a self-custody multi-signature wallet, the next step is to enable transactions on the blockchain
+
+      * Blockchain node management ( in development) - connect, monitor, and manage your own blockchain nodes
+
+      * Easy deployment - we support easy deployment using
+
+        * Docker Compose
+        * Kubernetes - using Helm Chart
+    image: /images/decap/profile_edit_wallet.png
+  - icon: shield
+    name: Enterprise
+    description: "**Defguard** is in the alpha development stage - at this point, we
+      grant anyone a full enterprise license for a limited time, but those
+      organizations/users that will be most helpful in testing, bug fixing or
+      just creative feedback will be granted in the future a full and unlimited
+      in time enterprise license. To obtain an enterprise license, please fill
+      out the following [form.](https://e5lq8l9h2ct.typeform.com/to/KRVZcqMY)"
+    image: /images/decap/openid.png
