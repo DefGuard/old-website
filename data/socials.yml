@@ -1,1 +1,13 @@
 links:
+  - icon: /images/decap/github_black.svg
+    name: Github
+    link: https://github.com/defguard/defguard/
+  - icon: /images/decap/twitter_black.svg
+    name: Twitter
+    link: https://twitter.com/defguard_net
+  - icon: /images/decap/slack_black.svg
+    name: Slack
+    link: https://defguard.slack.com/
+  - icon: /images/decap/reddit_black.svg
+    name: Reddit
+    link: https://www.reddit.com/r/defguard
