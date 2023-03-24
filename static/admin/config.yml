@@ -33,11 +33,32 @@ collections:
               - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
               - {label: Name, name: name, widget: text}
               - {label: Description, name: description, widget: markdown}
-              - {label: Image, name: image, widget: image}
-          - label: Socials
-            name: socials
+              - {label: Image, name: image, widget: image} 
+  - name: socials
+    label: "Socials config"
+    files:
+      - name: socialsData
+        label: Links config
+        file: "data/socials.yml"
+        fields:
+          - label: Links
+            name: links
             widget: list
-            fields:
+            fields:  
               - {label: Icon, name: icon, widget: image}
               - {label: Name, name: name, widget: string}
-              - {label: Link, name: link, widget: string}
+              - {label: Link, name: link, widget: string}      
+  - name: "navigation"
+    label: "Navigation config"
+    files:
+      - name: "navigationData"
+        label: "Navigation config"
+        file: "data/navigation.yml"
+        fields:
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: text}
+              - {label: Link, name: link, widget: text}
+              - {label: Target, name: target, widget: select, options: ['blank', 'self'], default: 'self'}

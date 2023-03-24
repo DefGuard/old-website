@@ -34,9 +34,9 @@
 {{ end }}
 
 {{ define "addons"}}
-{{with .Site.Data.landing }}
-{{ partial "landing/socials.html" . }}
-{{end}}
+<ul id="floating-socials">
+  {{ partial "socials-items.html" .}}
+</ul>
 {{end}}
 
 {{ define "scripts" }}

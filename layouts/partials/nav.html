@@ -7,15 +7,11 @@
   </div>
   <div class="bottom">
     <ul class="links">
+      {{ range .Site.Data.navigation.links}}
       <li class="link">
-        <a href="#identity">Features</a>
+        <a href="{{.link}}" target="_{{.target}}" {{if .target eq "blank" }} rel="noreferrer" {{end}}>{{ .text }}</a>
       </li>
-      <li class="link">
-        <a href="https://defguard.gitbook.io/defguard/">Documentation</a>
-      </li>
-      <li class="link">
-        <a href="https://e5lq8l9h2ct.typeform.com/to/KRVZcqMY" target="_blank">Try Enterprise</a>
-      </li>
+      {{end}}
       <li class="github-link">
         <a href="https://github.com/DefGuard/defguard" target="_blank">
           <button class="github small">
@@ -30,26 +26,7 @@
       </li>
     </ul>
     <ul class="socials">
-      <li>
-        <a href="https://github.com/DefGuard/defguard" target="_blank">
-          <img src="/images/svg/github_black.svg" alt="github icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/defguard_net" target="_blank">
-          <img src="/images/svg/twitter_black.svg" alt="twitter icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://defguard.slack.com/" target="_blank">
-          <img src="/images/svg/slack_black.svg" alt="slack icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://reddit.com/r/defguard" target="_blank">
-          <img src="/images/svg/reddit_black.svg" alt="reddit icon" />
-        </a>
-      </li>
+      {{ partial 'socials-items.html' .}}
     </ul>
   </div>
 </div>
@@ -60,15 +37,11 @@
         <img src="/images/svg/logo_nav.svg" alt="logo" />
       </a>
     </li>
+    {{ range .Site.Data.navigation.links}}
     <li class="link">
-      <a href="#identity">Features</a>
+      <a href="{{.link}}" target="_{{.target}}" {{if .target eq "blank" }} rel="noreferrer" {{end}}>{{.text}}</a>
     </li>
-    <li class="link">
-      <a href="https://defguard.gitbook.io/defguard/" target="_blank">Documentation</a>
-    </li>
-    <li class="link">
-      <a href="https://e5lq8l9h2ct.typeform.com/to/KRVZcqMY" target="_blank">Try Enterprise</a>
-    </li>
+    {{end}}
     <li class="github-link">
       <a href="https://github.com/DefGuard/defguard" target="_blank">
         <button class="github small">
