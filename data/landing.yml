@@ -32,3 +32,20 @@ features:
 
       * Web3 - authentication with crypto software and hardware wallets using Metamask and Wallet Connect
     image: /images/decap/yubi.png
+  - icon: shield
+    name: VPN
+    description: >-
+      Based on Wireguard protocol with the ability to manage/connect multiple
+      sites/gateways
+
+
+      * Easy access for new users (in development) - share VPN configuration for users in a secure way, enabling them to download and configure VPN configurations with one email
+
+      * User managed - enabled users to manage their devices at any time easily
+
+      * Activity & Statistics - Detailed analytics, graphs, and connection activity for administrators
+
+      * Global Map overview - currently in development
+
+      * Easy setup - defguard Wireguard gateway supports Linux and OPNsense with system packages
+    image: /images/decap/profile.png
