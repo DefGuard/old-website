@@ -146,7 +146,8 @@
     & > .header {
       position: relative;
 
-      & > h1 {
+      & > p,
+      & > span {
         @include page-title;
 
         text-align: center;

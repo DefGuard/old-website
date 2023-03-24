@@ -2,9 +2,7 @@
 <section id="source">
   <div class="content">
     <div class="header">
-      <h1>
-        {{ .Site.Data.landing.header.title | markdownify }}
-      </h1>
+      {{ .Site.Data.landing.header.title | markdownify }}
     </div>
     <p>
       {{ .Site.Data.landing.header.content | markdownify }}
