@@ -161,23 +161,10 @@ section {
       }
 
       & > .right {
-        &.placeholder {
-          background-color: var(--white);
-          height: 300px;
-          display: flex;
-          flex-flow: column;
-          align-content: center;
-          align-items: center;
-          justify-content: center;
-          border-radius: 25px;
-          filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
-        }
-        & > img {
-          aspect-ratio: 16 / 9;
-          height: 300px;
-          border-radius: 25px;
-          filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
-        }
+        aspect-ratio: 16 / 9;
+        height: 300px;
+        border-radius: 25px;
+        filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
       }
     }
   }
