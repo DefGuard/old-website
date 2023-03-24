@@ -109,6 +109,9 @@ body {
   z-index: 20;
   box-sizing: border-box;
   padding-bottom: 30px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.hidden {
     display: none;
