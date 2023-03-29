@@ -1,42 +1,22 @@
 <footer>
   <img class="logo" src="/images/svg/logo_white.svg" alt="logo" />
   <div class="links">
+    {{ range .Site.Data.footer.columns }}
     <div class="col">
-      <p>Company</p>
+      <p>{{.title}}</p>
       <ul class="company">
+        {{ range .links }}
         <li>
-          <a href="https://teonite.com/about" target="_blank">About Us</a>
+          <a href="{{.link}}" target="_{{.target}}" rel="noreferrer">{{.text}}</a>
         </li>
-        <li>
-          <a href="https://teonite.com/contact" target="_blank">Contact Us</a>
-        </li>
+        {{end}}
       </ul>
     </div>
-    <div class="col">
-      <p>Community</p>
-      <ul class="community">
-        <li>
-          <a href="https://github.com/DefGuard/defguard" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://teonite.com/blog/" target="_blank">Blog</a>
-        </li>
-        <li>
-          <a href="https://defguard.slack.com/" target="_blank">Slack</a>
-        </li>
-        <li>
-          <a href=" https://reddit.com/r/defguard" target="_blank">Reddit</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/defguard_net" target="_blank">Twitter</a>
-        </li>
-      </ul>
-    </div>
+    {{end}}
   </div>
   <p class="copyright">
-    © 2022
-    <a href="https://teonite.com/" target="_blank">teonite</a> services sp.
-    z .o .o
+    {{ $options := dict "display" "inline" }}
+    {{ .Site.Data.footer.copyright | .Page.RenderString $options }}
   </p>
   <div class="bg blue"></div>
   <img class="bg circuits" src="/images/svg/bg_circuits.svg" alt="circuits" />

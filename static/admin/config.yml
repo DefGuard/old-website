@@ -101,4 +101,4 @@ collections:
                     default: 'blank'
           - name: copyright
             label: Copyright
-            widget: string
+            widget: markdown
