@@ -93,7 +93,8 @@
       }
     }
 
-    & > video {
+    & > video,
+    #main-image {
       background-color: var(--white);
       filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
       border-radius: 25px;

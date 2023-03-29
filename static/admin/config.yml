@@ -3,8 +3,8 @@ backend:
   repo: DefGuard/defguard.github.io 
   branch: master
   api_root: https://api.github.com 
-  site_domain: defguard.github.io
-  base_url: https://decap-dfg.teonite.net
+  site_domain: defguard.net
+  base_url: https://defguard.net
   auth_endpoint: auth
   cms_label_prefix: decap/
 
@@ -23,15 +23,18 @@ collections:
           - label: Header
             name: header
             widget: object
+            summary: '{{fields.title}}'
             fields:
               - {label: Title, name: title, widget: markdown}
               - {label: Sub content, name: content, widget: markdown}
+              - {label: Image, name: image, widget: image}
           - label: Features
             name: features
             widget: list
+            summary: "{{fields.name}}"
             fields:
               - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
-              - {label: Name, name: name, widget: text}
+              - {label: Name, name: name, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: image, widget: image} 
   - name: socials
@@ -44,6 +47,7 @@ collections:
           - label: Links
             name: links
             widget: list
+            summary: '{{fields.name}}'
             fields:  
               - {label: Icon, name: icon, widget: image}
               - {label: Name, name: name, widget: string}
@@ -58,7 +62,42 @@ collections:
           - label: Links
             name: links
             widget: list
+            summary: '{{fields.text}}'
             fields:
-              - {label: Text, name: text, widget: text}
-              - {label: Link, name: link, widget: text}
+              - {label: Text, name: text, widget: string}
+              - {label: Link, name: link, widget: string}
               - {label: Target, name: target, widget: select, options: ['blank', 'self'], default: 'self'}
+  - name: "footer"
+    label: "Footer config"
+    files:
+      - name: "footerData"
+        label: "Footer config"
+        file: "data/footer.yml"
+        fields:
+          - name: columns
+            label: Columns
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: links
+                label: Links
+                widget: list
+                summary: '{{fields.text}}'
+                fields:
+                  - name: text
+                    label: Text
+                    widget: string
+                  - name: link
+                    label: Link
+                    widget: string
+                  - name: target
+                    label: Target
+                    widget: select
+                    options: ['blank', 'self']
+                    default: 'blank'
+          - name: copyright
+            label: Copyright
+            widget: string

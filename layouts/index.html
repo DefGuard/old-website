@@ -2,11 +2,10 @@
 <section id="source">
   <div class="content">
     <div class="header">
-      {{ .Site.Data.landing.header.title | markdownify }}
+      {{ $options := dict "display" "block" }}
+      {{ .Site.Data.landing.header.title | .Page.RenderString $options }}
     </div>
-    <p>
-      {{ .Site.Data.landing.header.content | markdownify }}
-    </p>
+    {{ .Site.Data.landing.header.content | .Page.RenderString $options }}
     <a class="built" href="https://teonite.com" target="_blank">
       <img src="/images/webp/built.webp" alt="built by" id="built-by" />
     </a>
@@ -20,7 +19,7 @@
         </svg>
       </button>
     </a>
-    <video></video>
+    <img id="main-image" src="{{ .Site.Data.landing.header.image }}" alt="main image" />
   </div>
   <img class="bg circuits" src="/images/svg/bg_circuits.svg" alt="circuits" />
   <img class="bg lines" src="/images/svg/bg_lines.svg" alt="wave" />
