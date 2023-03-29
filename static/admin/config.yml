@@ -4,7 +4,7 @@ backend:
   branch: master
   api_root: https://api.github.com 
   site_domain: defguard.net
-  base_url: https://defguard.net
+  base_url: https://decap-dfg.teonite.net
   auth_endpoint: auth
   cms_label_prefix: decap/
 
