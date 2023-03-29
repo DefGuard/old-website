@@ -29,7 +29,7 @@ collections:
           - name: openGraph
             label: Open Graph
             widget: object
-            summary: "Open Graph config"
+            summary: Open Graph config
             required: false
             fields:
               - name: title
@@ -50,13 +50,12 @@ collections:
             widget: object
             summary: Twitter card config
             required: false
-            hint: Requires configured Open Graph
             fields:
               - name: card
                 label: Card
                 widget: select
                 default: summary
-                fields:
+                options:
                   - summary
                   - summary_large_image
                   - app
