@@ -35,12 +35,15 @@ collections:
               - name: title
                 label: Title
                 widget: string
+                required: false
               - name: url
                 label: URL
                 widget: string
+                required: false
               - name: description
                 label: Description
                 widget: string
+                required: false
               - name: image
                 label: Image
                 required: false
@@ -55,6 +58,7 @@ collections:
                 label: Card
                 widget: select
                 default: summary
+                required: false
                 options:
                   - summary
                   - summary_large_image

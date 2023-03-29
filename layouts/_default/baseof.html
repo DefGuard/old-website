@@ -11,8 +11,10 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
   <meta name="description" content="{{.Site.Data.meta.description}}" />
   {{ if isset .Site.Data.meta "twitter"}}
-  {{with .Site.Data.meta.twitter}}
+  {{ with .Site.Data.meta.twitter}}
+  {{ if isset . "card" }}
   <meta name="twitter:card" content="{{.card}}" />
+  {{end}}
   {{ if isset . "attribution" }}
   {{ if isset .attribution "site" }}
   <meta name="twitter:site" content="{{.attribution.site}}" />
@@ -27,8 +29,12 @@
   {{ if isset .Site.Data.meta "openGraph" }}
   {{ with .Site.Data.meta.openGraph }}
   <meta name="og:type" content="website" />
+  {{ if isset . "url" }}
   <meta name="og:url" content="{{.url}}" />
+  {{end}}
+  {{ if isset . "description" }}
   <meta name="og:description" content="{{.description}}" />
+  {{end}}
   {{ if isset . "image"}}
   <meta name="og:image" content="{{.image}}" />
   {{end}}
