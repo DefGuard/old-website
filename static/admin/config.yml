@@ -35,6 +35,7 @@ collections:
             fields:
               - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
               - {label: Name, name: name, widget: string}
+              - {label: Section ID, name: id, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: image, widget: image} 
   - name: socials

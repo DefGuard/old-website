@@ -1,4 +1,4 @@
-<section id="enterprise" {{ if not .odd }} class="feature white" {{else}} class="feature light" {{end}}>
+<section id="{{.context.id}}" {{ if not .odd }} class="feature white" {{else}} class="feature light" {{end}}>
   <header>
     <img src="/images/svg/{{.context.icon}}.svg" alt="wallet" />
     <h2>{{ .context.name }}</h2>
