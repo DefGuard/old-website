@@ -13,11 +13,74 @@ local_backend: true
 media_folder: "static/images/decap"
 public_folder: "/images/decap" 
 collections:
+  - name: meta
+    label: Meta config
+    files:
+      - name: meta
+        label: Meta config
+        file: "data/meta.yml"
+        fields:
+          - name: title
+            label: Website title
+            widget: string
+          - name: description
+            label: Description
+            widget: string
+          - name: openGraph
+            label: Open Graph
+            widget: object
+            summary: "Open Graph config"
+            required: false
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: url
+                label: URL
+                widget: string
+              - name: description
+                label: Description
+                widget: string
+              - name: image
+                label: Image
+                required: false
+                widget: image
+          - name: twitter
+            label: Twitter
+            widget: object
+            summary: Twitter card config
+            required: false
+            hint: Requires configured Open Graph
+            fields:
+              - name: card
+                label: Card
+                widget: select
+                default: summary
+                fields:
+                  - summary
+                  - summary_large_image
+                  - app
+                  - player
+              - name: attribution
+                label: Attribution
+                widget: object
+                required: false
+                fields:
+                  - name: site
+                    label: Site
+                    widget: string
+                    required: false
+                  - name: creator
+                    label: Creator
+                    widget: string
+                    required: false
+
+
   - name: "landing"
-    label: "Landing"
+    label: "Landing page configuration"
     files:
       - name: "LandingData" 
-        label: "Landing page config"
+        label: "Config"
         file: "data/landing.yml"
         fields:
           - label: Header
