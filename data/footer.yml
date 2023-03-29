@@ -1,0 +1,27 @@
+columns:
+  - title: Company
+    links:
+      - target: blank
+        text: About Us
+        link: https://teonite.com/about
+      - target: blank
+        text: Contact Us
+        link: https://teonite.com/contact
+  - title: Community
+    links:
+      - target: blank
+        text: GitHub
+        link: https://github.com/DefGuard/defguard
+      - target: blank
+        text: Blog
+        link: https://teonite.com/blog/
+      - target: blank
+        text: Slack
+        link: https://defguard.slack.com/
+      - target: blank
+        text: Reddit
+        link: https://www.reddit.com/r/defguard
+      - target: blank
+        text: Twitter
+        link: https://twitter.com/defguard_net
+copyright: © 2023 teonite services sp. z .o .o
