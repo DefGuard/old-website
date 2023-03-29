@@ -77,8 +77,6 @@ collections:
                     label: Creator
                     widget: string
                     required: false
-
-
   - name: "landing"
     label: "Landing page configuration"
     files:
@@ -101,7 +99,7 @@ collections:
             fields:
               - {label: Icon, name: icon, widget: select, options: ['branching', 'shield', 'wallet'], default: 'shield'}
               - {label: Name, name: name, widget: string}
-              - {label: Section ID, name: id, widget: string}
+              - {label: Section ID, name: id, widget: string, required: false}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: image, widget: image} 
   - name: socials
