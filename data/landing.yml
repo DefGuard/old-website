@@ -55,7 +55,7 @@ features:
     description: An easy way to provision **YubiKey** hardware keys in an
       organization, generation signing keys - gpg/pgp and authentication keys -
       eg. ssh
-    image: /images/decap/yubi.png
+    image: /images/decap/yubikey.png
   - icon: webhook
     name: Integrations
     description: >-
