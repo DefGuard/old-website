@@ -44,10 +44,14 @@ features:
       * Easy setup - defguard Wireguard gateway supports Linux and OPNsense (Freebsd)
 
       * In development:
+
+        * Activity streams
+
         * Easy access for new users - share VPN configuration for users in a secure way, enabling them to download and configure VPN configurations with one email
+
+        * Desktop clients with MFA support
+
         * Global Map overview
-       ﻿ * GUI clients with MFA Support
-       ﻿ * Activity streams
     image: /images/decap/hero-image.png
   - icon: yubikey
     name: Yubikey Provisioning
@@ -67,13 +71,12 @@ features:
     image: /images/decap/webhooks.png
   - icon: wallet
     name: Web 3
-    description: >
-      Integration with Web3/blockchain functionalities. Since defguard secures
-      the whole user journey/connections, from secure communication using VPN,
-      then authentication based on company identity and Multi-Factor
-      Authentication ( supporting crypto wallets), it's a perfect web2 -> web3
-      gateway for your organization.
+    description: >-
+      Since defguard secures the whole user journey/connections, from secure
+      communication using VPN, then authentication based on company identity and
+      **Multi-Factor Authentication (supporting crypto wallets)**, it's a
+      perfect web2 -> web3 gateway for your organization.
 
 
-      Wallet management with MetaMask and Wallet Connect - an easy way for users to validate the ownership of wallets - no need to sed wallet addresses through slack/email anymore.
+      Wallet management with MetaMask and Wallet Connect - an easy way for users to validate the ownership of wallets - no need to send wallet addresses through slack/email anymore.
     image: /images/decap/profile_edit_wallet.png
