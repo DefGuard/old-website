@@ -33,8 +33,8 @@ features:
   - icon: shield
     name: VPN
     description: >-
-      Based on open source Wireguard protocol, designed to manage multiple
-      sites/gateways enables:
+      Based on open source [Wireguard protocol](https://wireguard.net/),
+      designed to manage multiple sites/gateways enables:
 
 
       * User managed - users manage their devices at any time easily
@@ -46,11 +46,8 @@ features:
       * In development:
 
         * Activity streams
-
         * Easy access for new users - share VPN configuration for users in a secure way, enabling them to download and configure VPN configurations with one email
-
         * Desktop clients with MFA support
-
         * Global Map overview
     image: /images/decap/hero-image.png
   - icon: yubikey
