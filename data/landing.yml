@@ -48,7 +48,7 @@ features:
         * Global Map overview
        ﻿ * GUI clients with MFA Support
        ﻿ * Activity streams
-    image: /images/decap/profile.png
+    image: /images/decap/hero-image.png
   - icon: yubikey
     name: Yubikey Provisioning
     description: An easy way to provision **YubiKey** hardware keys in an
