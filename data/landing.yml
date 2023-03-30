@@ -65,7 +65,7 @@ features:
       * **API** - all functionalities are exposed by REST API
 
       * **Webhooks** - outgoing webhooks are a simple way that defguard can notify your systems of ongoing changes in: identity ( user was added, deleted, modified) or hardware key provisioning ( easily propagate pgp/gpg or ssh keys to your internal systems)
-    image: /images/decap/webhooks.png
+    image: /images/decap/webhook.png
   - icon: wallet
     name: Web 3
     description: >-
