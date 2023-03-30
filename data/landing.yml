@@ -1,8 +1,10 @@
 header:
-  title: Open Source **S﻿ecurity Army Knife** (Identity, VPN, Yubikey, Web3)
-  content: Building a **secure organization** has always been **difficult** and
-    **costly**. Defguard provides a beautiful, easy-to-use (business users) and
-    deploy (admin/devops) fundament to make your organization secure.
+  title: Open Source **S﻿ecurity Army Knife**
+  content: >-
+    **(Identity, VPN, Yubikey, Web3)**
+
+
+    Building a **secure organization** has always been **difficult** and **costly**. Defguard provides a beautiful, easy-to-use (business users) and deploy (admin/devops) fundament to make your organization secure.
   image: /images/decap/hero-image.png
 features:
   - icon: branching
