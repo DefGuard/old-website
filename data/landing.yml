@@ -79,3 +79,10 @@ features:
 
       Wallet management with MetaMask and Wallet Connect - an easy way for users to validate the ownership of wallets - no need to send wallet addresses through slack/email anymore.
     image: /images/decap/web3-image.png
+  - icon: shield
+    name: Pentested by professionals
+    description: "**defguard** was thoroughly and comprehensively audited by one of
+      the best security organizations in Poland: iSEC (<https://isec.pl>). iSEC
+      is also a strategic security partner of **defguard**, providing pentests
+      for every major release."
+    image: /images/decap/isec.png
