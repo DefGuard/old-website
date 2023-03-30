@@ -52,13 +52,13 @@ features:
        ﻿ * GUI clients with MFA Support
        ﻿ * Activity streams
     image: /images/decap/profile.png
-  - icon: shield
+  - icon: yubikey
     name: Yubikey Provisioning
     description: An easy way to provision **YubiKey** hardware keys in an
       organization, generation signing keys - gpg/pgp and authentication keys -
       eg. ssh
     image: /images/decap/yubi.png
-  - icon: shield
+  - icon: webhook
     name: Integrations
     description: >-
       Automate processes that involve your organization's data using:
