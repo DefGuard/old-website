@@ -1,7 +1,7 @@
 <section {{ if isset .context "id" }} id="{{.context.id}}" {{end}} {{ if not .odd }} class="feature white" {{else}}
   class="feature light" {{end}}>
   <header>
-    <img src="/images/svg/{{.context.icon}}.svg" alt="wallet" />
+    <img src="/images/svg/{{.context.icon}}.svg" alt="feature_icon" />
     <h2>{{ .context.name }}</h2>
   </header>
   <div class="content">
