@@ -29,7 +29,7 @@ features:
       * **WebAuthn / FIDO2** - for hardware key authentication support
 
       * Web3 - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
-    image: /images/decap/yubi.png
+    image: /images/decap/mfa.png
   - icon: shield
     name: VPN
     description: >-
