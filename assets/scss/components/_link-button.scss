@@ -1,0 +1,41 @@
+@use "../mixins" as *;
+
+.link-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 85px;
+  a {
+    &.link-button {
+      height: 62px;
+      text-decoration: none;
+      text-decoration-color: transparent;
+      border: 0 solid transparent;
+      border-radius: 15px;
+      background-color: var(--dfg-blue);
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      box-sizing: border-box;
+      padding: 16px 24px;
+      & > * {
+        display: inline;
+        line-height: 30px !important;
+        font-family: "Poppins" !important;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        color: var(--white);
+      }
+    }
+    &.right {
+      align-self: flex-end;
+      margin-left: auto;
+    }
+  }
+}

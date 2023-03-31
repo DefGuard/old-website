@@ -116,11 +116,24 @@ section {
             }
           }
         }
-        p,
-        span,
-        a,
-        li {
+
+        & > p,
+        & > span,
+        & > a,
+        & > li {
           @include standard-text;
+        }
+
+        & > p,
+        & > span,
+        & > ul {
+          a,
+          li,
+          ul,
+          span,
+          p {
+            @include standard-text;
+          }
         }
 
         strong {
@@ -162,7 +175,6 @@ section {
 
       & > .right {
         aspect-ratio: 16 / 9;
-        height: 300px;
         border-radius: 25px;
         filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.1));
       }

@@ -9,6 +9,9 @@
       <p>
         {{ .context.description | markdownify }}
       </p>
+      {{if isset .context "linkButton" }}
+      {{ partial "linkButton.html" .context.linkButton }}
+      {{end}}
     </div>
     <img src="{{ .context.image }}" class="right" />
   </div>
