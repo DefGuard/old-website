@@ -58,6 +58,19 @@ features:
       organization, generation signing keys - gpg/pgp and authentication keys -
       eg. ssh
     image: /images/decap/yubikey.png
+  - icon: lockSec
+    name: Pentested by professionals
+    description: "defguard was thoroughly and comprehensively audited by one **of
+      the best security organizations** in Poland: **iSEC** (<https://isec.pl>).
+      iSEC is also a strategic security partner of defguard, providing pentests
+      for every major release, making defguard one of the most secure core
+      components in the open source ecosystem."
+    image: /images/decap/isec.png
+    linkButton:
+      link: /images/decap/testpdf.pdf
+      target: blank
+      text: Download Security Audit
+      alignment: right
   - icon: webhook
     name: Integrations
     description: >-
@@ -68,18 +81,6 @@ features:
 
       * **Webhooks** - outgoing webhooks are a simple way that defguard can notify your systems of ongoing changes in: identity ( user was added, deleted, modified) or hardware key provisioning ( easily propagate pgp/gpg or ssh keys to your internal systems)
     image: /images/decap/webhook.png
-  - icon: lockSec
-    name: Pentested by professionals
-    description: "**defguard** was thoroughly and comprehensively audited by one of
-      the best security organizations in Poland: iSEC (<https://isec.pl>). iSEC
-      is also a strategic security partner of **defguard**, providing pentests
-      for every major release."
-    image: /images/decap/isec.png
-    linkButton:
-      link: /images/decap/testpdf.pdf
-      target: blank
-      text: Download Security Audit
-      alignment: right
   - icon: wallet
     name: Web 3
     description: >-
