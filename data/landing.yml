@@ -89,11 +89,11 @@ features:
   - icon: wallet
     name: Web3
     description: >-
-      Since defguard secures the whole user journey/connections, from secure
-      communication using VPN, then authentication based on company identity and
+      Since defguard secures the whole user journey (connections), from secure
+      communication using VPN, to authentication based on company identity and
       **Multi-Factor Authentication (supporting crypto wallets)**, it's a
       perfect web2 -> web3 gateway for your organization.
 
 
-      Wallet management with MetaMask and Wallet Connect - an easy way for users to validate the ownership of wallets - no need to send wallet addresses through slack/email anymore.
+      Wallet management with **MetaMask** and **Wallet Connect** is an easy way for users to validate the ownership of wallets as there is no need to send wallet addresses through Slack/email anymore.
     image: /images/decap/web3-image.png
