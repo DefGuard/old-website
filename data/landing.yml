@@ -59,17 +59,17 @@ features:
       eg. ssh
     image: /images/decap/yubikey.png
   - icon: lockSec
-    name: Pentested by professionals
-    description: "defguard was thoroughly and comprehensively audited by one **of
-      the best security organizations** in Poland: **iSEC** (<https://isec.pl>).
-      iSEC is also a strategic security partner of defguard, providing pentests
-      for every major release, making defguard one of the most secure core
+    name: Checked by professionals
+    description: "defguard was **thoroughly and comprehensively audited** by one of
+      the best **security researchers in Poland: [ISEC](https://isec.pl)**. ISEC
+      is also a strategic partner of defguard, reviewing every major release
+      from a security perspective, making defguard one of the most secure core
       components in the open source ecosystem."
     image: /images/decap/isec.png
     linkButton:
       link: /images/decap/testpdf.pdf
       target: blank
-      text: Download Security Audit
+      text: Download report
       alignment: right
   - icon: webhook
     name: Integrations
