@@ -58,9 +58,10 @@ features:
     image: /images/decap/hero-image.png
   - icon: yubikey
     name: Yubikey provisioning
-    description: An easy way to provision **YubiKey** hardware keys in an
-      organization, generate signing keys - GPG/PGP and authentication keys -
-      e.g. SSH
+    description: An easy way to provision
+      **[YubiKey](https://www.yubico.com/products/yubikey-5-overview/)**
+      hardware keys in an organization, generate signing keys - GPG/PGP and
+      authentication keys - e.g. SSH
     image: /images/decap/yubikey.png
   - icon: lockSec
     name: Checked by professionals
@@ -81,9 +82,9 @@ features:
       Automate processes that involve your organization's data using:
 
 
-      * **API** - all functionalities are exposed by REST API
+      * **API** - all functionalities are exposed via REST API
 
-      * **Webhooks** - outgoing webhooks are a simple way that defguard can notify your systems of ongoing changes in: identity ( user was added, deleted, modified) or hardware key provisioning ( easily propagate pgp/gpg or ssh keys to your internal systems)
+      * **Webhooks** - outgoing webhooks are a simple way for defguard to notify your systems of ongoing changes in: identity ( user was added, deleted, modified) or hardware key provisioning ( easily propagate pgp/gpg or ssh keys to your internal systems)
     image: /images/decap/webhook.png
   - icon: wallet
     name: Web 3
