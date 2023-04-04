@@ -86,8 +86,6 @@ features:
 
       * **Webhooks** - outgoing webhooks are a simple way for defguard to notify your systems of ongoing changes in identity management (user was added, deleted, modified) or hardware key provisioning (easily propagateGPG/PGP or SSH keys to your internal systems)
     image: /images/decap/webhook.png
-    linkButton:
-      ? alignment
   - icon: wallet
     name: Web3
     description: >-
@@ -99,13 +97,7 @@ features:
 
       Wallet management with **MetaMask** and **Wallet Connect** is an easy way for users to validate the ownership of wallets as there is no need to send wallet addresses through Slack/email anymore.
     image: /images/decap/web3-image.png
-    linkButton:
-      ? alignment
   - icon: speed
-    linkButton:
-      target: blank
-      alignment: null
-      link: ""
     name: Portability & speed
     description: We've implemented defguard in [Rust](https://www.rust-lang.org/)
       for **code portability, security, and speed**. You can easily run defguard
