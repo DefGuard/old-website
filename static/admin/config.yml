@@ -114,6 +114,8 @@ collections:
                   - yubikey
                   - googleAuth
                   - lockSec
+                  - rust
+                  - speed
               - {label: Name, name: name, widget: string}
               - {label: Section ID, name: id, widget: string, required: false}
               - {label: Description, name: description, widget: markdown}
