@@ -10,15 +10,19 @@ features:
   - icon: branching
     name: Identity
     description: >-
-      Every organization starts with users. As a core defguard functionality
-      it's built on open standards:
+      The power of every organization is its users. As a core principle,
+      defguard is based and built on open standards:
 
 
-      * [OpenID Connect](https://openid.net/connect/)
+      * **[OpenID Connect](https://openid.net/connect/)**
 
-      * **OpenLDAP** synchronization - currently supporting users and groups synchronization
+      * **[OpenLDAP](https://www.openldap.org/)** synchronization - currently supporting users and groups synchronization
 
-      * Active Directory synchronization (in development)
+      * **[P﻿ostgreSQL](https://www.postgresql.org/)** as core data backend
+
+      * In development:
+
+        * Active Directory synchronization
     image: /images/decap/users.png
   - icon: googleAuth
     name: Multi-Factor Authentication
@@ -26,24 +30,24 @@ features:
       MFA is currently supported with the following methods:
 
 
-      * Time-based **One-time Password** Algorithm (TOTP - eg. Google Authenticator)
+      * **Time-based** **One-Time Password** Algorithm (TOTP - e.g. Google Authenticator)
 
       * **WebAuthn / FIDO2** - for hardware key authentication support
 
-      * Web3 - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
+      * **Web3** - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
     image: /images/decap/mfa.png
   - icon: shield
     name: VPN
     description: >-
       Based on open source [Wireguard protocol](https://wireguard.net/),
-      designed to manage multiple sites/gateways enables:
+      designed to manage multiple sites/gateways, enables:
 
 
       * User managed - users manage their devices at any time easily
 
-      * Activity & Statistics - Detailed analytics, graphs, and connection activity for administrators
+      * Activity & Statistics - detailed analytics, graphs, and connection activity for administrators
 
-      * Easy setup - defguard Wireguard gateway supports Linux and OPNsense (Freebsd)
+      * Easy setup - defguard Wireguard gateway supports Linux and [OPNsense](https://opnsense.org/) (FreeBSD)
 
       * In development:
 
@@ -53,10 +57,10 @@ features:
         * Global Map overview
     image: /images/decap/hero-image.png
   - icon: yubikey
-    name: Yubikey Provisioning
+    name: Yubikey provisioning
     description: An easy way to provision **YubiKey** hardware keys in an
-      organization, generation signing keys - gpg/pgp and authentication keys -
-      eg. ssh
+      organization, generate signing keys - GPG/PGP and authentication keys -
+      e.g. SSH
     image: /images/decap/yubikey.png
   - icon: lockSec
     name: Checked by professionals
