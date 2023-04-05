@@ -33,10 +33,13 @@
 </div>
 <nav>
   <ul>
-    <li class="logo">
-      <a href="#source">
+    <li class="logo" id="nav-logo">
+      <a>
         <img src="/images/svg/logo_nav.svg" alt="logo" />
       </a>
+    </li>
+    <li class="link" id="features-desktop">
+      <span>Features</span>
     </li>
     {{ range $item := .Site.Data.navigation.links }}
     <li class="link">

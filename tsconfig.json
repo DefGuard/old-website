@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "dom"
+    ]
+  },
+  "include": [
+    "assets/scripts**/*.ts"
+  ]
+}

@@ -1,7 +1,4 @@
 links:
-  - target: self
-    text: Features
-    link: "#identity"
   - target: blank
     text: Documentation
     link: https://defguard.gitbook.io/defguard/
