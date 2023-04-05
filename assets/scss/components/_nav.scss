@@ -36,6 +36,7 @@ body {
 
       & > li {
         display: block;
+        user-select: none;
 
         &.logo {
           width: 160px;
@@ -76,6 +77,15 @@ body {
         &.github-link {
           @include media-breakpoint-down(lg) {
             display: none;
+          }
+        }
+
+        &#features-desktop {
+          & > span {
+            @include standard-text;
+
+            text-decoration: none;
+            cursor: pointer;
           }
         }
 

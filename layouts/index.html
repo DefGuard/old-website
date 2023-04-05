@@ -34,6 +34,15 @@
 <ul id="floating-socials">
   {{ partial "socials.html" .}}
 </ul>
+<div id="floating-features" role="list">
+  {{ range $item := .Site.Data.landing.features }}
+  <div class="feature-link" data-value="{{ .id }}">
+    <span>
+      {{ .name }}
+    </span>
+  </div>
+  {{end}}
+</div>
 {{end}}
 
 {{ define "scripts" }}
