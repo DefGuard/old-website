@@ -113,5 +113,5 @@ features:
       and others. We've prepared various [Linux and
       OPNSense](https://defguard.gitbook.io/defguard/features/setting-up-your-instance)
       (FreeBSD) but we are constantly working on other platforms.
-    image: /images/decap/webhook.png
+    image: /images/decap/rust-illu.png
     id: speed
