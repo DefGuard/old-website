@@ -1,4 +1,4 @@
-import { autoUpdate, computePosition, offset } from "@floating-ui/dom";
+import { autoUpdate, computePosition, hide, offset } from "@floating-ui/dom";
 
 const hamburgerHandler = () => {
   const mobileNavElement = document.getElementById("mobile-nav");
@@ -39,11 +39,13 @@ const floatingSocials = () => {
         cleanup = autoUpdate(featuresNavElement, floatingElement, () => {
         computePosition(featuresNavElement, floatingElement, {
           placement: 'bottom-start',
-          middleware: [offset(15)], 
-        }).then( ({x,y}) => {
+          middleware: [offset(15), hide()], 
+        }).then( ({x,y, middlewareData}) => {
+          const {referenceHidden} = middlewareData.hide;
           Object.assign(floatingElement.style, {
             left: `${x - window.scrollX}px`,
-            top: `${y - window.scrollY}px`
+            top: `${y - window.scrollY}px`,
+            visibility: referenceHidden ? 'hidden' : 'visible',
           });
         })
         });
