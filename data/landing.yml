@@ -24,6 +24,7 @@ features:
 
         * Active Directory synchronization
     image: /images/decap/users.png
+    id: identity
   - icon: googleAuth
     name: Multi-Factor Authentication
     description: >-
@@ -36,6 +37,7 @@ features:
 
       * **Web3** - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
     image: /images/decap/mfa.png
+    id: mfa
   - icon: shield
     name: VPN
     description: >-
@@ -56,6 +58,7 @@ features:
         * Desktop clients with MFA support
         * Global Map overview
     image: /images/decap/hero-image.png
+    id: vpn
   - icon: yubikey
     name: Yubikey provisioning
     description: An easy way to provision
@@ -63,6 +66,7 @@ features:
       hardware keys in an organization, generate signing keys - GPG/PGP and
       authentication keys - e.g. SSH
     image: /images/decap/yubikey.png
+    id: yubikey
   - icon: lockSec
     name: Checked by professionals
     description: "defguard was **thoroughly and comprehensively audited** by one of
@@ -76,6 +80,7 @@ features:
       target: blank
       text: Download report
       alignment: right
+    id: isec
   - icon: webhook
     name: Integrations
     description: >-
@@ -86,6 +91,7 @@ features:
 
       * **Webhooks** - outgoing webhooks are a simple way for defguard to notify your systems of ongoing changes in identity management (user was added, deleted, modified) or hardware key provisioning (easily propagateGPG/PGP or SSH keys to your internal systems)
     image: /images/decap/webhook.png
+    id: integrations
   - icon: wallet
     name: Web3
     description: >-
@@ -97,6 +103,7 @@ features:
 
       Wallet management with **MetaMask** and **Wallet Connect** is an easy way for users to validate the ownership of wallets as there is no need to send wallet addresses through Slack/email anymore.
     image: /images/decap/web3-image.png
+    id: web3
   - icon: speed
     name: Portability & speed
     description: We've implemented defguard in [Rust](https://www.rust-lang.org/)
@@ -107,3 +114,4 @@ features:
       OPNSense](https://defguard.gitbook.io/defguard/features/setting-up-your-instance)
       (FreeBSD) but we are constantly working on other platforms.
     image: /images/decap/webhook.png
+    id: speed
