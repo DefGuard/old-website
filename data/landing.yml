@@ -51,6 +51,8 @@ features:
 
       * Easy setup - defguard Wireguard gateway supports Linux and [OPNsense](https://opnsense.org/) (FreeBSD)
 
+      * I﻿mport your current configuration and devices with wizard
+
       * In development:
 
         * Activity streams
