@@ -45,13 +45,13 @@ features:
       designed to manage multiple sites/gateways, enables:
 
 
-      * User managed - users manage their devices at any time easily
+      * User managed - **users manage their devices** at any time easily
 
       * Activity & Statistics - detailed analytics, graphs, and connection activity for administrators
 
       * Easy setup - defguard Wireguard gateway supports Linux and [OPNsense](https://opnsense.org/) (FreeBSD)
 
-      * I﻿mport your current configuration and devices with wizard
+      * **I﻿mport** your **current configuration** and devices with a wizard
 
       * In development:
 
