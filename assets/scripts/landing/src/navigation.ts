@@ -1,4 +1,8 @@
 import { autoUpdate, computePosition, hide, offset } from "@floating-ui/dom";
+import { hideElement, toggleVisibility } from "./utils/visibility";
+
+const navElement = document.querySelector('body>nav') as HTMLElement;
+const mobileNavElement = document.getElementById('mobile-nav') as HTMLElement;
 
 const hamburgerHandler = () => {
   const mobileNavElement = document.getElementById("mobile-nav");
@@ -10,8 +14,19 @@ const mobileNavCloseHandler = () => {
   mobileNavElement?.classList.add("hidden");
 };
 
+const scrollToFeature = (featuredId: string) => {
+  const targetElement = document.getElementById(featuredId);
+  const navHeight = navElement.clientHeight;
+  if(targetElement) {
+    const {x, y} = targetElement.getBoundingClientRect();
+    const top = y + window.scrollY;
+    const left = x + window.scrollX;
+    window.scrollTo({left: left, top: top - navHeight});
+  }
+}
+
 const floatingSocials = () => {
-  const navElement = document.querySelector('body>nav');
+  
   const featuresNavElement = document.getElementById("features-desktop");
   const floatingElement = document.getElementById("floating-features");
 
@@ -25,7 +40,6 @@ const floatingSocials = () => {
   }
 
   if(featuresNavElement && floatingElement && navElement) {
-    const navHeight = navElement.clientHeight;
     let cleanup = null;
     featuresNavElement.addEventListener('click', () => {
       const isOpen = floatingElement.classList.contains('open');
@@ -57,17 +71,36 @@ const floatingSocials = () => {
     for(const link of listElements) {
       link.addEventListener('click', function (this) {
         const targetElementId = this.getAttribute('data-value');
-        const targetElement = document.getElementById(targetElementId);
-        if(targetElement) {
-          const {x, y} = targetElement.getBoundingClientRect();
-          const top = y + window.scrollY;
-          const left = x + window.scrollX;
-          window.scrollTo({left: left, top: top - navHeight});
-          floatingElement.classList.remove('open');
-        }
+        scrollToFeature(targetElementId);
+        floatingElement.classList.remove('open');
       })
     }
   }
+}
+
+const featuresMobileNav = () => {
+  const featuresExpandControlElement = document.getElementById('features-expand-control');
+  const featuresExpandElement = document.getElementById('features-expand');
+  if(featuresExpandControlElement && featuresExpandElement) {
+    featuresExpandControlElement.addEventListener('click', () => {
+      const isVisible = toggleVisibility(featuresExpandElement);
+      if(isVisible) {
+        featuresExpandControlElement.classList.add('active')
+      } else {
+        featuresExpandControlElement.classList.remove('active');
+      }
+    })
+  }
+  const featureElements = document.querySelectorAll('#features-expand > .feature');
+  featureElements.forEach((featureElement) => {
+    featureElement.addEventListener('click', () => {
+      const featureId = featureElement.getAttribute('data-value') as string;
+      scrollToFeature(featureId);
+      hideElement(mobileNavElement);
+      hideElement(featuresExpandElement);
+      featuresExpandControlElement.classList.remove('active');
+    });
+  });
 }
 
 const logoClickHandler = () => {
@@ -85,6 +118,7 @@ const main = () => {
   hamburgerElement?.addEventListener("click", hamburgerHandler);
   mobileNavCloseElement?.addEventListener("click", mobileNavCloseHandler);
   floatingSocials();
+  featuresMobileNav();
 };
 
 export default main;
