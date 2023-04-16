@@ -157,43 +157,60 @@ body {
   }
 
   & > .bottom {
-    & > .links {
-      list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 77px 1fr 77px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 32px;
+    & > * {
+      grid-column: 2;
+    }
+    & > .items {
       display: flex;
+      row-gap: 10px;
       flex-flow: column;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      row-gap: 32px;
-      padding: 0;
-      margin: 160px 0 66px;
 
-      & > li {
-        &.link {
-          display: flex;
-          flex-flow: row nowrap;
-          width: 100%;
-          align-items: center;
-          align-content: center;
-          justify-content: center;
-          height: 37px;
-          & > a {
-            @include standard-text;
-            font-size: 18px;
-            text-decoration: none;
-          }
+      .item {
+        cursor: pointer;
+        height: 37px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding-left: 20px;
+        & > span {
+          @include standard-text;
+          font-size: 18px;
         }
-
-        &.github-link {
-          & > a {
-            height: 62px;
-            width: 276px;
-            text-decoration: none;
-          }
+      }
+      & > a {
+        text-decoration: none;
+      }
+      #features-expand-control {
+        border-left: 2px solid transparent;
+        &.active {
+          border-left-color: var(--dfg-blue);
+        }
+      }
+      #features-expand {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 37px;
+        row-gap: 10px;
+        &.hidden {
+          display: none;
+        }
+        & > .feature {
+          width: 100%;
+          height: 100%;
+          padding-left: 50px;
         }
       }
     }
-
     & > .socials {
       list-style: none;
       display: flex;
@@ -201,21 +218,22 @@ body {
       align-items: center;
       align-content: center;
       justify-content: center;
-      column-gap: 27px;
+      column-gap: 10px;
       margin: 0;
       padding: 0;
+      margin-top: 40px;
 
       & > li {
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
 
         & > a {
           width: 48px;
           height: 48px;
 
           img {
-            width: 48px;
-            height: 48px;
+            width: 24px;
+            height: 24px;
           }
         }
       }

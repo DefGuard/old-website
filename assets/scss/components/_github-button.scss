@@ -23,8 +23,13 @@ button {
     }
 
     & > svg {
-      width: 48px;
-      height: 48px;
+      height: 24px;
+      width: 24px;
+
+      @include media-breakpoint-up(lg) {
+        width: 48px;
+        height: 48px;
+      }
     }
 
     &.small {
