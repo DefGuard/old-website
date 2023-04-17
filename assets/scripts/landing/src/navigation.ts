@@ -98,7 +98,7 @@ const featuresMobileNav = () => {
     featureElement.addEventListener('click', () => {
       const featureId = featureElement.getAttribute('data-value') as string;
       scrollToFeature(featureId);
-      hideElement(mobileNavElement);
+      mobileNavCloseHandler();
       hideElement(featuresExpandElement);
       featuresExpandControlElement.classList.remove('active');
     });
