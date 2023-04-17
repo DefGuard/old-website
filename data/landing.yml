@@ -117,3 +117,12 @@ features:
       (FreeBSD) but we are constantly working on other platforms.
     image: /images/decap/rust-illu.png
     id: speed
+testimonials:
+  - name: Widestreet
+    description: "**defguard** secures infrastructure for wideStreet’s banking grade
+      trading system debtSpot."
+    image: /images/decap/t-widestreet.svg
+  - image: /images/decap/t-zmp.png
+    name: ZMP
+    description: "**defguard** secures infrastructure and multiple systems access
+      for highly sensitive government data used by MonitorMiast ecosystem"
