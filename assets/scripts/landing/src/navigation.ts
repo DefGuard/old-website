@@ -7,11 +7,13 @@ const mobileNavElement = document.getElementById('mobile-nav') as HTMLElement;
 const hamburgerHandler = () => {
   const mobileNavElement = document.getElementById("mobile-nav");
   mobileNavElement?.classList.remove("hidden");
+  document.body.classList.add('lock-scroll');
 };
 
 const mobileNavCloseHandler = () => {
   const mobileNavElement = document.getElementById("mobile-nav");
   mobileNavElement?.classList.add("hidden");
+  document.body.classList.remove('lock-scroll');
 };
 
 const scrollToFeature = (featuredId: string) => {
