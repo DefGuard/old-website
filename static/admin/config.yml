@@ -149,6 +149,20 @@ collections:
                     options:
                       - left
                       - right
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: image
+                label: Logo image
+                widget: image
+              - name: description
+                label: Description
+                widget: markdown
   - name: socials
     label: "Socials config"
     files:
