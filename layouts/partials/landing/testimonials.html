@@ -1,0 +1,34 @@
+{{ $odd := not ( modBool ( .Site.Data.landing.features | len ) 2 ) }}
+<section id="testimonials" {{ if not $odd }} class="feature white" {{else}} class="feature light" {{end}}>
+  <header>
+    <img src="/images/svg/user-quote.svg" />
+    <h2>Testimonials</h2>
+  </header>
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {{ range $item := .Site.Data.landing.testimonials }}
+        <li class="glide__slide">
+          <div class="testimonial">
+            <div class="image-container">
+              <img src="{{$item.image}}" />
+            </div>
+            {{ $options := dict "display" "block"}}
+            {{ $item.description | page.RenderString $options }}
+          </div>
+        </li>
+        {{end}}
+      </ul>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      {{ range $index, $_ := .Site.Data.landing.testimonials}}
+      <button class="glide__bullet" data-glide-dir="={{$index}}">
+        <div class="dot"></div>
+      </button>
+      {{end}}
+    </div>
+  </div>
+  {{if not $odd}}
+  <img class="bg" src="/images/svg/bg_circuits_l.svg" alt="circuits" />
+  {{end}}
+</section>

@@ -1,3 +1,7 @@
+{{ define "head"}}
+{{ partial "link-sass.html" (dict "path" "scss/external/glide/glide.core.scss" "target" "glide-core.css" )}}
+{{ partial "link-sass.html" (dict "path" "scss/external/glide/glide.theme.scss" "target" "glide-theme.css" )}}
+{{end}}
 {{ define "main" }}
 <section id="source">
   <div class="content">
@@ -28,6 +32,7 @@
 {{ $odd := not (modBool $i 2) }}
 {{partial "landing/feature.html" (dict "context" . "odd" $odd )}}
 {{end}}
+{{partial "landing/testimonials.html" .}}
 {{ end }}
 
 {{ define "addons"}}

@@ -46,6 +46,9 @@
   (not
   hugo.IsProduction))}}
   {{ $style := $sass | resources.ToCSS $options | resources.PostCSS }}
+  {{ block "head" .}}
+
+  {{end}}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
 </head>
 
