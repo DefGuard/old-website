@@ -77,5 +77,15 @@
       align-items: center;
       justify-content: center;
     }
+
+    & > p {
+      @include standard-text;
+
+      strong {
+        @include bold;
+      }
+
+      line-height: 27px;
+    }
   }
 }
