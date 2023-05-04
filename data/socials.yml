@@ -5,6 +5,6 @@ links:
   - icon: /images/decap/twitter_black.svg
     name: Twitter
     link: https://twitter.com/defguard_net
-  - icon: /images/decap/slack_black.svg
-    name: Slack
-    link: https://defguard.slack.com/
+  - icon: /images/decap/matrix-icon.svg
+    name: Matrix
+    link: https://defguard.net
