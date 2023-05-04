@@ -16,8 +16,8 @@ columns:
         text: Blog
         link: https://teonite.com/blog/
       - target: blank
-        text: Slack
-        link: https://defguard.slack.com/
+        text: Matrix
+        link: https://defguard.net/
       - target: blank
         text: Twitter
         link: https://twitter.com/defguard_net
