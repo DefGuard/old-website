@@ -14,10 +14,10 @@ columns:
         link: https://github.com/DefGuard/defguard
       - target: blank
         text: Blog
-        link: https://teonite.com/blog/
+        link: https://teonite.com/blog/tag/defguard/
       - target: blank
         text: Matrix
-        link: https://matrix.to/#/#defguard:matrix.teonite.net
+        link: https://matrix.to/#/#defguard:teonite.com
       - target: blank
         text: Twitter
         link: https://twitter.com/defguard_net
