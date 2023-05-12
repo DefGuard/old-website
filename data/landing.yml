@@ -71,14 +71,18 @@ features:
     id: yubikey
   - icon: lockSec
     name: Checked by professionals
-    description: "defguard was **thoroughly and comprehensively audited** by one of
-      the best **security researchers in Poland: [ISEC](https://isec.pl)**. ISEC
-      is also a strategic partner of defguard, reviewing every major release
-      from a security perspective, making defguard one of the most secure core
-      components in the open source ecosystem."
+    description: >-
+      defguard was **thoroughly and comprehensively audited** by one of the best
+      **security researchers in Poland: [ISEC](https://isec.pl)**. ISEC is also
+      a strategic partner of defguard, reviewing every major release from a
+      security perspective, making defguard one of the most secure core
+      components in the open source ecosystem.
+
+
+      A﻿ll Critical and Major issues [have been fixed in dedicated pull requests](https://github.com/DefGuard/defguard/pulls). Retest will follow soon (we'll notify on our [Twitter](https://twitter.com/defguard_net)).
     image: /images/decap/isec.png
     linkButton:
-      link: /images/decap/testpdf.pdf
+      link: /images/decap/isec-defguard.pdf
       target: blank
       text: Download report
       alignment: right
