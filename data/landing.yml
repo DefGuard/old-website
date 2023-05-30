@@ -1,20 +1,20 @@
 header:
-  title: Open Source **S﻿ecurity Army Knife**
+  title: Open Source **S﻿ecurity Swiss Army Knife**
   content: >-
-    **(Identity, VPN, Yubikey, Web3)**
+    **(Identity Provider, Wireguard VPN, Yubikey, Web3)**
 
 
     Building a **secure organization** has always been **difficult** and **costly**. Defguard provides a beautiful, easy-to-use (business users) and deploy (admin/devops) fundament to make your organization secure.
   image: /images/decap/hero-image.png
 features:
   - icon: branching
-    name: Identity
+    name: Identity Provider
     description: >-
       The power of every organization is its users. As a core principle,
       defguard is based and built on open standards:
 
 
-      * **[OpenID Connect](https://openid.net/connect/)**
+      * [OpenID Connect](https://openid.net/connect/) ﻿based Identity Provider
 
       * **[OpenLDAP](https://www.openldap.org/)** synchronization - currently supporting users and groups synchronization
 
