@@ -1,7 +1,7 @@
 header:
   title: Open Source **S﻿ecurity Swiss Army Knife**
   content: >-
-    **(Identity Provider, VPN, Yubikey, Web3)**
+    **(Identity Provider, Wireguard VPN, Yubikey, Web3)**
 
 
     Building a **secure organization** has always been **difficult** and **costly**. Defguard provides a beautiful, easy-to-use (business users) and deploy (admin/devops) fundament to make your organization secure.
