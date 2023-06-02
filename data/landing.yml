@@ -39,7 +39,7 @@ features:
     image: /images/decap/mfa.png
     id: mfa
   - icon: shield
-    name: VPN
+    name: Wireguard VPN Management
     description: >-
       Based on open source [Wireguard protocol](https://wireguard.net/),
       designed to manage multiple sites/gateways, enables:
