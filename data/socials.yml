@@ -2,9 +2,12 @@ links:
   - icon: /images/decap/github_black.svg
     name: Github
     link: https://github.com/defguard/defguard/
-  - icon: /images/decap/twitter_black.svg
-    name: Twitter
-    link: https://twitter.com/defguard_net
   - icon: /images/decap/matrix-icon.svg
     name: Matrix
     link: https://matrix.to/#/#defguard:teonite.com
+  - icon: /images/decap/mastodon.svg
+    name: Mastodon
+    link: https://floss.social/@defguard
+  - icon: /images/decap/twitter_black.svg
+    name: Twitter
+    link: https://twitter.com/defguard_net
