@@ -61,6 +61,19 @@ features:
         * Global Map overview
     image: /images/decap/hero-image.png
     id: vpn
+  - icon: openid
+    linkButton:
+      target: blank
+      alignment: right
+    name: Enrollment & Onboarding
+    description: >
+      Secure remote enrollment process, during which the user can: double-check
+      their data, setup their password, and add their initial device to access
+      VPN as a nice wizard!
+
+
+      A﻿fter enrollment the user can b﻿e onboarded with relevant company information, links to company systems, security guidelines, etc. In the enrollment module, you can write custom messages using markdown that will be shown on the last step of the enrollment process and sent to the user via email.
+    image: https://github.com/DefGuard/docs/raw/docs/releases/0.7/enrollment.png?raw=true
   - icon: yubikey
     name: Yubikey provisioning
     description: An easy way to provision
