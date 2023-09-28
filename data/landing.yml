@@ -25,6 +25,26 @@ features:
         * Active Directory synchronization
     image: /images/decap/users.png
     id: identity
+  - icon: shield
+    name: Wireguard VPN Management
+    description: >-
+      * **multiple VPN Locations** (networks/sites) - with defined access (all
+      users or only Admin group)
+
+      * multiple Gateways for each VPN Location (**high availability/failover**) - supported on a cluster of routers/firewalls for Linux, FreeBSD/PFSense/OPNSense
+
+      * **import** your current WireGuard server configuration with a **wizard**!
+
+      * **dashboard and statistics overview** of connected users/devices for admins
+
+      * automatic IP allocation
+
+      * kernel (Linux, FreeBSD/OPNSense/PFSense) & userspace WireGuard support with our Rust library
+
+
+      *defguard is not an official WireGuard project, and WireGuard is a registered trademark of Jason A. Donenfeld.*
+    image: /images/decap/hero-image.png
+    id: vpn
   - icon: googleAuth
     name: Multi-Factor Authentication
     description: >-
@@ -38,29 +58,6 @@ features:
       * **Web3** - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
     image: /images/decap/mfa.png
     id: mfa
-  - icon: shield
-    name: Wireguard VPN Management
-    description: >-
-      Based on open source [Wireguard protocol](https://wireguard.net/),
-      designed to manage multiple sites/gateways, enables:
-
-
-      * User managed - **users manage their devices** at any time easily
-
-      * Activity & Statistics - detailed analytics, graphs, and connection activity for administrators
-
-      * Easy setup - defguard Wireguard gateway supports Linux and [OPNsense](https://opnsense.org/) (FreeBSD)
-
-      * **I﻿mport** your **current configuration** and devices with a wizard
-
-      * In development:
-
-        * Activity streams
-        * Easy access for new users - share VPN configuration for users in a secure way, enabling them to download and configure VPN configurations with one email
-        * Desktop clients with MFA support
-        * Global Map overview
-    image: /images/decap/hero-image.png
-    id: vpn
   - icon: openid
     linkButton:
       target: blank
