@@ -58,6 +58,25 @@ features:
       * **Web3** - authentication with crypto software and hardware wallets using Metamask, Wallet Connect, Ledger Extension
     image: /images/decap/mfa.png
     id: mfa
+  - icon: shield
+    linkButton:
+      target: blank
+      alignment: right
+    name: Beautiful Desktop Clients
+    image: /images/decap/defguard-desktop-client.png
+    description: >-
+      Desktop client supports:
+
+
+      * Secure and remote [user enrollment](https://defguard.gitbook.io/defguard/help/remote-user-enrollment) - setting up password, automatically configuring the client for all VPN Locations/Networks
+
+      * [Onboarding](https://defguard.gitbook.io/defguard/help/remote-user-enrollment/user-onboarding-after-enrollment) - displaying custom onboarding messages, with templates, links ...
+
+      * Ability to route predefined VPN traffic or all traffic (server needs to have NAT configured - in gateway example)
+
+      * Live & real-time network charts
+
+      * In development: **Multi-Factor Authentication** for VPN, live logs, dark theme, settings, and more!
   - icon: openid
     linkButton:
       target: blank
@@ -131,25 +150,6 @@ features:
       (FreeBSD) but we are constantly working on other platforms.
     image: /images/decap/rust-illu.png
     id: speed
-  - icon: shield
-    linkButton:
-      target: blank
-      alignment: right
-    name: Beautiful Desktop Clients
-    image: /images/decap/defguard-desktop-client.png
-    description: >-
-      Desktop client supports:
-
-
-      * Secure and remote [user enrollment](https://defguard.gitbook.io/defguard/help/remote-user-enrollment) - setting up password, automatically configuring the client for all VPN Locations/Networks
-
-      * [Onboarding](https://defguard.gitbook.io/defguard/help/remote-user-enrollment/user-onboarding-after-enrollment) - displaying custom onboarding messages, with templates, links ...
-
-      * Ability to route predefined VPN traffic or all traffic (server needs to have NAT configured - in gateway example)
-
-      * Live & real-time network charts
-
-      * In development: **Multi-Factor Authentication** for VPN, live logs, dark theme, settings, and more!
 testimonials:
   - name: Widestreet
     description: "**defguard** secures infrastructure for wideStreet’s banking grade
